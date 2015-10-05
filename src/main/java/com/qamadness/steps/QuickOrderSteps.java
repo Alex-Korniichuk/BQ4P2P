@@ -28,7 +28,7 @@ public class QuickOrderSteps extends ScenarioSteps{
     @Step
     public void check_Is_Product_In_The_Cart (){
         shoppingCartPage.checkIsProductInTheCart();
-        shoppingCartPage.removeProducts();
+        shoppingCartPage.clearCart();
     }
 
 }

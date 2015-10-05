@@ -4,7 +4,6 @@ package com.qamadness.pages.front_end;
  * Created by alexandrakorniichuk on 02.10.15.
  */
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.DefaultUrl;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 

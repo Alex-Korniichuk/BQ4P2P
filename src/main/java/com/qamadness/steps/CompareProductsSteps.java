@@ -56,7 +56,7 @@ public class CompareProductsSteps extends ScenarioSteps {
     public void check_Is_Product_In_The_Cart(){
         Boolean status = shoppingCartPage.checkIsProductInTheCart();
         if (status == true){
-            shoppingCartPage.removeProducts();
+            shoppingCartPage.clearCart();
         }
     }
 

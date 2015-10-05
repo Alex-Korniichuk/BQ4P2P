@@ -26,7 +26,7 @@ public class QuickOrderPage extends PageObject {
     public void uploadFile() {
         ((JavascriptExecutor) getDriver()).executeScript("document.getElementById('customer_sku_csv').style.opacity = '100';");
         WebElement fileInput = getDriver().findElement(By.id("customer_sku_csv"));
-        //fileInput.sendKeys("/Users/alexandrakorniichuk/IdeaProjects/BQ4P2P/src/test/resources/QuickOrderProducts.csv");
+        //fileInput.sendKeys("/Users/alexandrakorniichuk/IdeaProjects/BQ4P2P/src/test/resources/QuickOrderProducts.csv"); - use this method if upload method doesn't work
         upload("QuickOrderProducts.csv").to(fileInput);
         WebElement uploadBtn = getDriver().findElement(By.xpath("//button[@title='Upload File']"));
         waitForRenderedElementsToBePresent(By.xpath("//a[@class='action-cancel']"));

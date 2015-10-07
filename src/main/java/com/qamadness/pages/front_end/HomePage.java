@@ -21,6 +21,12 @@ public class HomePage extends PageObject {
     @FindBy (xpath = "//li[@class='no-sub highlight']/a")
     WebElementFacade quickOrderLink;
 
+    @FindBy (xpath = "//li[@class='my-account-nav']/a")
+    WebElementFacade myAccountLink;
+
+    @FindBy (xpath = "//ul[@id='nav-my-account']/li[5]/a")
+    WebElementFacade orderTemplatesLink;
+
     public HomePage() {
     }
 
@@ -45,4 +51,10 @@ public class HomePage extends PageObject {
     public void  clickQuickOrderLink (){
         quickOrderLink.click();
     }
+
+    public void clickOrderTemplatesLink(){
+        myAccountLink.click();
+        orderTemplatesLink.click();
+    }
+
 }

@@ -1,25 +1,22 @@
 package com.qamadness.features;
 
-/**
- * Created by alexandrakorniichuk on 02.10.15.
- */
-import com.qamadness.steps.QuickOrderSteps;
 import com.qamadness.steps.LoginSteps;
+import com.qamadness.steps.OrderTemplateSteps;
+import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
-import net.thucydides.core.annotations.Pending;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Managed;
-
+import net.thucydides.core.annotations.Steps;
+import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
-import net.thucydides.junit.annotations.UseTestDataFrom;
 
+/**
+ * Created by alexandrakorniichuk on 07.10.15.
+ */
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value="src/test/resources/TestingData.csv")
-public class QuickOrderStory {
-
+public class OrderTemplatesStory {
 
     private String email;
     private String password;
@@ -31,19 +28,19 @@ public class QuickOrderStory {
     public LoginSteps loginSteps;
 
     @Steps
-    public QuickOrderSteps quickOrderSteps;
+    public OrderTemplateSteps orderTemplateSteps;
 
-    @Issue("#AUT-38")
-    @Pending @Test
-    public void add_products_to_cart_by_uploading_CSV_file (){
+    @Issue("AUT-39")
+    @Test
+    public void create_new_template(){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
         loginSteps.click_Login_Btn();
         loginSteps.check_Is_User_Logged_In();
         loginSteps.click_Main_Menu_Btn();
-        quickOrderSteps.click_Quick_Order_Link();
-        quickOrderSteps.upload_File();
-        quickOrderSteps.check_Is_Product_In_The_Cart();
-
+        orderTemplateSteps.open_My_Order_Templates_Page();
+        orderTemplateSteps.create_New_Order_Template();
+        orderTemplateSteps.delete_Order_Template();
     }
+
 }

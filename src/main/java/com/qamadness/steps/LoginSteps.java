@@ -13,7 +13,6 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class LoginSteps extends ScenarioSteps {
 
     LoginPage frontEndLoginPage;
-    HomePage homePage;
 
     @Step
     public void open_Page() {
@@ -31,13 +30,5 @@ public class LoginSteps extends ScenarioSteps {
         frontEndLoginPage.clickLoginBtn();
     }
 
-    @Step
-    public void check_Is_User_Logged_In(){
-        homePage.checkIsUserLoggedIn();
-    }
 
-    @Step
-    public void click_Main_Menu_Btn(){
-        homePage.clickMainMenuBtn();
-    }
 }

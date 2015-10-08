@@ -17,6 +17,9 @@ public class ShopBySupplierPage extends PageObject {
     @FindBy(id = "supplierList")
     WebElementFacade suppliersList;
 
+    @FindBy (xpath = "//div[@id='product-listing-container']/div[1]/div/div[@class='product-name name-container']/a")
+    WebElementFacade productName;
+
     public ShopBySupplierPage(){
     }
 
@@ -46,6 +49,10 @@ public class ShopBySupplierPage extends PageObject {
         waitForRenderedElementsToBePresent(By.cssSelector(".compare-link-action"));
         WebElement linkToComparePage = getDriver().findElement(By.cssSelector(".compare-link-action"));
         linkToComparePage.click();
+    }
+
+    public void openProductDetailsPage(){
+        productName.click();
     }
 
 }

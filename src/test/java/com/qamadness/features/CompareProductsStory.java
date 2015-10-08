@@ -1,7 +1,6 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.CompareProductsSteps;
-import com.qamadness.steps.LoginSteps;
+import com.qamadness.steps.*;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
@@ -24,10 +23,20 @@ public class CompareProductsStory {
     public WebDriver webdriver;
 
     @Steps
+    public HomePageSteps homePageSteps;
+
+    @Steps
+    public ShopBySupplierPageSteps shopBySupplierPageSteps;
+
+    @Steps
     public LoginSteps loginSteps;
 
     @Steps
-    public CompareProductsSteps compareProductsSteps;
+    public CompareProductsPageSteps compareProductsPageSteps;
+
+    @Steps
+    public ShoppingCartPageSteps shoppingCartPageSteps;
+
 
     @Issue("#AUT-36")
     @Pending @Test
@@ -35,16 +44,16 @@ public class CompareProductsStory {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
         loginSteps.click_Login_Btn();
-        loginSteps.check_Is_User_Logged_In();
-        loginSteps.click_Main_Menu_Btn();
-        compareProductsSteps.click_Shop_By_Supplier_Link();
-        compareProductsSteps.open_Supplier_Page_With_Products();
-        compareProductsSteps.add_Products_To_Comparison();
-        compareProductsSteps.go_To_Comparison_Page();
-        compareProductsSteps.add_Product_To_Cart();
-        compareProductsSteps.remove_All_Products_From_Comparison();
-        compareProductsSteps.open_Shopping_Cart();
-        compareProductsSteps.check_Is_Product_In_The_Cart();
+        homePageSteps.check_Is_User_Logged_In();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.click_Shop_By_Supplier_Link();
+        shopBySupplierPageSteps.open_Supplier_Page_With_Products();
+        shopBySupplierPageSteps.add_Products_To_Comparison();
+        shopBySupplierPageSteps.go_To_Comparison_Page();
+        compareProductsPageSteps.add_Product_To_Cart();
+        compareProductsPageSteps.remove_All_Products_From_Comparison();
+        homePageSteps.open_Shopping_Cart();
+        shoppingCartPageSteps.check_Is_Product_In_The_Cart();
     }
 
     @Pending @Test

@@ -3,8 +3,10 @@ package com.qamadness.features;
 /**
  * Created by alexandrakorniichuk on 02.10.15.
  */
-import com.qamadness.steps.QuickOrderSteps;
+import com.qamadness.steps.HomePageSteps;
+import com.qamadness.steps.QuickOrderPageSteps;
 import com.qamadness.steps.LoginSteps;
+import com.qamadness.steps.ShoppingCartPageSteps;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
@@ -20,7 +22,6 @@ import net.thucydides.junit.annotations.UseTestDataFrom;
 @UseTestDataFrom(value="src/test/resources/TestingData.csv")
 public class QuickOrderStory {
 
-
     private String email;
     private String password;
 
@@ -28,10 +29,16 @@ public class QuickOrderStory {
     public WebDriver webdriver;
 
     @Steps
+    public HomePageSteps homePageSteps;
+
+    @Steps
     public LoginSteps loginSteps;
 
     @Steps
-    public QuickOrderSteps quickOrderSteps;
+    public QuickOrderPageSteps quickOrderPageSteps;
+
+    @Steps
+    public ShoppingCartPageSteps shoppingCartPageSteps;
 
     @Issue("#AUT-38")
     @Pending @Test
@@ -39,11 +46,11 @@ public class QuickOrderStory {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
         loginSteps.click_Login_Btn();
-        loginSteps.check_Is_User_Logged_In();
-        loginSteps.click_Main_Menu_Btn();
-        quickOrderSteps.click_Quick_Order_Link();
-        quickOrderSteps.upload_File();
-        quickOrderSteps.check_Is_Product_In_The_Cart();
+        homePageSteps.check_Is_User_Logged_In();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.click_Quick_Order_Link();
+        quickOrderPageSteps.upload_File();
+        shoppingCartPageSteps.check_Is_Product_In_The_Cart();
 
     }
 }

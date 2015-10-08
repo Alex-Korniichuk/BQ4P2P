@@ -4,6 +4,7 @@ import net.serenitybdd.core.annotations.findby.By;
 import net.thucydides.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
+import org.junit.Assert;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,6 +19,10 @@ public class ShoppingCartPage extends PageObject {
 
     @FindBy(xpath = "//a[@title='Clear Cart']")
     WebElementFacade clearCartBtn;
+
+    @FindBy (xpath = "//div[@class='item row']/div[2]/span/a")
+    WebElementFacade actualProductName;
+
 
 
     public ShoppingCartPage(){
@@ -45,4 +50,14 @@ public class ShoppingCartPage extends PageObject {
         waitForRenderedElementsToBePresent(By.className("empty-cart-content"));
 
     }
+
+    public void checkProductName (String expectedProductName){
+        if(expectedProductName.equalsIgnoreCase(actualProductName.getText()) == true){
+            System.out.println("Correct Product is added to the shopping cart");
+        }else {
+            Assert.fail("Incorrect product is added to cart");
+        }
+    }
+
+
 }

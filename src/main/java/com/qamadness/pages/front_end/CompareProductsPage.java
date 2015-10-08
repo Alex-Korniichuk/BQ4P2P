@@ -18,21 +18,11 @@ public class CompareProductsPage extends PageObject {
     @FindBy(xpath = "//button[@id='bq-ui-1']")
     WebElementFacade addToCartBtn;
 
-    @FindBy (css = ".dropdown.mini-cart-link>a")
-    WebElementFacade miniShoppingCartLink;
-
     public CompareProductsPage() {
     }
 
     public void addProductToCart (){
         addToCartBtn.click();
-    }
-
-    public void openShoppingCart (){
-        miniShoppingCartLink.click();
-        WebDriverWait wait = new WebDriverWait(getDriver(),40);
-        WebElement openShoppingCartBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-primary btn-sm']")));
-        openShoppingCartBtn.click();
     }
 
     public void removeCompareProducts (){

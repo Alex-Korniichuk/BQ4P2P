@@ -22,6 +22,15 @@ public class MyOrderTemplatesPage extends PageObject {
     @FindBy (xpath = "//ul[@class='dropdown-menu template-menu']/li[3]/a")
     WebElementFacade orderTemplateItem;
 
+    @FindBy (xpath = "//td[@class='item-info']/div/div/div/a")
+    WebElementFacade productTitle;
+
+    @FindBy (xpath = "//a[@class='btn btn-primary btn-add']")
+    WebElementFacade addToCartBtn;
+
+    @FindBy (xpath = "//a[@class='btn btn-delete hidden-xs']")
+    WebElementFacade removeProductLink;
+
     public MyOrderTemplatesPage(){}
 
     public void expandOrderTemplate (){
@@ -49,5 +58,17 @@ public class MyOrderTemplatesPage extends PageObject {
         if (isElementVisible(By.xpath("//ul[@class='dropdown-menu template-menu']/li[3]/a")) == true){
             shouldNotBeVisible(orderTemplateItem);
         }
+    }
+
+    public String getProductTitle (){
+        return productTitle.getText();
+    }
+
+    public void clickAddToCartBtn (){
+        addToCartBtn.click();
+    }
+
+    public void removeProduct (){
+        removeProductLink.click();
     }
 }

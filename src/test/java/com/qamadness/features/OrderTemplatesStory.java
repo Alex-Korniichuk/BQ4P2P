@@ -1,7 +1,6 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.LoginSteps;
-import com.qamadness.steps.OrderTemplateSteps;
+import com.qamadness.steps.*;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
@@ -25,22 +24,58 @@ public class OrderTemplatesStory {
     public WebDriver webdriver;
 
     @Steps
+    public HomePageSteps homePageSteps;
+
+    @Steps
+    public ShopBySupplierPageSteps shopBySupplierPageSteps;
+
+    @Steps
     public LoginSteps loginSteps;
 
     @Steps
-    public OrderTemplateSteps orderTemplateSteps;
+    public OrderTemplatePageSteps orderTemplatePageSteps;
+
+    @Steps
+    public ProductDetailsPageSteps productDetailsPageSteps;
+
+    @Steps
+    public ShoppingCartPageSteps shoppingCartPageSteps;
 
     @Issue("AUT-39")
+
     @Test
-    public void create_new_template(){
+    public void create_new_template_and_remove_it(){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
         loginSteps.click_Login_Btn();
-        loginSteps.check_Is_User_Logged_In();
-        loginSteps.click_Main_Menu_Btn();
-        orderTemplateSteps.open_My_Order_Templates_Page();
-        orderTemplateSteps.create_New_Order_Template();
-        orderTemplateSteps.delete_Order_Template();
+        homePageSteps.check_Is_User_Logged_In();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.open_My_Order_Templates_Page();
+        orderTemplatePageSteps.create_New_Order_Template();
+        orderTemplatePageSteps.delete_Order_Template();
     }
+
+    @Test
+    public void add_a_product_to_order_template(){
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.expand_Product_And_Services_Tab();
+        homePageSteps.click_Shop_By_Supplier_Link();
+        shopBySupplierPageSteps.open_Supplier_Page_With_Products();
+        shopBySupplierPageSteps.open_Product_Details_Page();
+        productDetailsPageSteps.add_Product_To_Order_Template();
+        String expectedProductName = productDetailsPageSteps.get_Expected_Product_Name();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.open_My_Order_Templates_Page();
+        orderTemplatePageSteps.check_That_Correct_Product_Is_Added_To_Template(expectedProductName);
+        orderTemplatePageSteps.add_Product_To_Cart();
+        homePageSteps.open_Shopping_Cart();
+        shoppingCartPageSteps.check_That_Correct_Product_In_The_Cart(expectedProductName);
+        shoppingCartPageSteps.clear_Cart();
+        shoppingCartPageSteps.go_To_Previous_Page();
+        orderTemplatePageSteps.remove_Product_From_Order_Template();
+    }
+
+
+
 
 }

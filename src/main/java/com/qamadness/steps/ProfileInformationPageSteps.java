@@ -31,5 +31,25 @@ public class ProfileInformationPageSteps extends ScenarioSteps {
         profileInformationPage.checkUserName(expectedFirstName, expectedLastName);
     }
 
+    @Step
+    public void type_Current_Password (String currentPass){
+        profileInformationPage.enterCurrentPass(currentPass);
+    }
+
+    @Step
+    public void type_New_Password (String newPass){
+        profileInformationPage.enterNewPass(newPass);
+    }
+
+    @Step
+    public void type_New_Password_Confirmation (String confPass){
+        profileInformationPage.enterConfirmPass(confPass);
+    }
+
+    @Step
+    public void save_New_Password (){
+        profileInformationPage.clickSavePassBtn();
+    }
+
 
 }

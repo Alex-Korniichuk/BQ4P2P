@@ -30,6 +30,18 @@ public class ProfileInformationPage extends PageObject {
     @FindBy(xpath = "//div[@class='title h4']")
     WebElementFacade displayedFullName;
 
+    @FindBy(id = "current_password")
+    WebElementFacade currentPassField;
+
+    @FindBy(id = "password")
+    WebElementFacade newPassField;
+
+    @FindBy(id = "confirmation")
+    WebElementFacade confirmNewPassField;
+
+    @FindBy (xpath = "//div[@class='my-account']/form[2]/fieldset/div[2]/div[4]/button[2]")
+    WebElementFacade savePassBtn;
+
     public ProfileInformationPage (){}
 
     public void enterFirstName (String name){
@@ -55,6 +67,22 @@ public class ProfileInformationPage extends PageObject {
         } else{
             Assert.fail("Expected name is: "+expectedFirstName+" Actual name is: "+actualFirstName+" Expected last name is: "+expectedLastName+" Actual last name is: "+actualLastName+". Error: name was changed to incorrect one.");
         }
+    }
+
+    public void enterCurrentPass (String currentPass){
+        currentPassField.type(currentPass);
+    }
+
+    public void enterNewPass (String newPass){
+        newPassField.type(newPass);
+    }
+
+    public void enterConfirmPass (String confPass){
+        confirmNewPassField.type(confPass);
+    }
+
+    public void clickSavePassBtn (){
+        savePassBtn.click();
     }
 
 }

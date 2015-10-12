@@ -56,4 +56,9 @@ public class HomePageSteps extends ScenarioSteps {
         homePage.clickProfileInfoLink();
     }
 
+    @Step
+    public void logout (){
+        homePage.clickLogoutLink();
+    }
+
 }

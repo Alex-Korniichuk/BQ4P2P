@@ -43,8 +43,7 @@ public class HomePage extends PageObject {
     @FindBy (xpath = "//ul[@id='nav-my-account']/li[1]/a")
     WebElementFacade profileInfoLink;
 
-    public HomePage() {
-    }
+    public HomePage() {}
 
     public void checkIsUserLoggedIn (){
         if ((logoutLink.isPresent())==true) {
@@ -100,6 +99,10 @@ public class HomePage extends PageObject {
 
     public void clickProfileInfoLink (){
         profileInfoLink.click();
+    }
+
+    public void clickLogoutLink (){
+        logoutLink.click();
     }
 
 }

@@ -46,4 +46,14 @@ public class HomePageSteps extends ScenarioSteps {
         homePage.openShoppingCart();
     }
 
+    @Step
+    public void expand_My_Account_Tab (){
+        homePage.expandMyAccountTab();
+    }
+
+    @Step
+    public void open_Profile_Information_Page (){
+        homePage.clickProfileInfoLink();
+    }
+
 }

@@ -8,11 +8,12 @@ package com.qamadness.pages.front_end;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
+import net.thucydides.core.pages.WebElementFacade;
 
 @DefaultUrl("https://dev.buyerquest.net/p2pdev2/customer/account/login/")
 public class LoginPage extends PageObject {
     @FindBy(id = "email")
-    private net.serenitybdd.core.pages.WebElementFacade emailField;
+    WebElementFacade emailField;
 
     @FindBy(id="pass")
     private net.serenitybdd.core.pages.WebElementFacade passField;

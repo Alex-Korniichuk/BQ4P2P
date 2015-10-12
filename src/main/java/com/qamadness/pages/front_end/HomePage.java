@@ -37,6 +37,12 @@ public class HomePage extends PageObject {
     @FindBy (css = ".dropdown.mini-cart-link>a")
     WebElementFacade miniShoppingCartLink;
 
+    @FindBy (xpath = "//ul[@id='nav-level-one']/li[4]/a")
+    WebElementFacade myAccountTab;
+
+    @FindBy (xpath = "//ul[@id='nav-my-account']/li[1]/a")
+    WebElementFacade profileInfoLink;
+
     public HomePage() {
     }
 
@@ -71,7 +77,7 @@ public class HomePage extends PageObject {
     public void expandProductsAndServicesTab (){
         String tabState = productsAnServicesTab.getAttribute("class");
         System.out.println(tabState);
-        if (tabState.equalsIgnoreCase("collapsed") == true){
+        if (tabState.equalsIgnoreCase("collapsed")){
             productsAnServicesTab.click();
         }
 
@@ -82,6 +88,18 @@ public class HomePage extends PageObject {
         WebDriverWait wait = new WebDriverWait(getDriver(),40);
         WebElement openShoppingCartBtn = wait.until(ExpectedConditions.elementToBeClickable(net.serenitybdd.core.annotations.findby.By.xpath("//a[@class='btn btn-primary btn-sm']")));
         openShoppingCartBtn.click();
+    }
+
+    public void expandMyAccountTab (){
+        String tabState = myAccountTab.getAttribute("class");
+        System.out.println(tabState);
+        if (tabState.equalsIgnoreCase("collapsed") == true){
+            myAccountTab.click();
+        }
+    }
+
+    public void clickProfileInfoLink (){
+        profileInfoLink.click();
     }
 
 }

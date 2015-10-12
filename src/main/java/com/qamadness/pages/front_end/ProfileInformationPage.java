@@ -3,6 +3,9 @@ package com.qamadness.pages.front_end;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by alexandrakorniichuk on 09.10.15.
@@ -29,24 +32,29 @@ public class ProfileInformationPage extends PageObject {
 
     public ProfileInformationPage (){}
 
-    public void enterFirstName (){
-        firstNameField.type("NewFirstName");
+    public void enterFirstName (String name){
+        firstNameField.type(name);
     }
 
-    public void enterLastName (){
-        lastNameField.type("NewLastName");
+    public void enterLastName (String lastName){
+        lastNameField.type(lastName);
     }
 
     public void clickSaveProfileBtn (){
         saveProfileBtn.click();
     }
 
-    public void checkUserName (){
-        String actualUserFirstName = displayedFirstName.getText();
-        System.out.println("User first name that is displayed on the site: " + actualUserFirstName);
-        int lettersQty = actualUserFirstName.length();
-        String actualLastName = displayedFullName.getText().substring(lettersQty);
+    public void checkUserName (String expectedFirstName, String expectedLastName){
+        String actualFirstName = displayedFirstName.getText();
+        System.out.println("User first name that is displayed on the site: " + actualFirstName);
+        int lettersQty = actualFirstName.length();
+        String actualLastName = displayedFullName.getText().replaceAll("\n", "").substring(lettersQty);
         System.out.println("Last Name is: "+actualLastName);
+        if (actualFirstName.equalsIgnoreCase(expectedFirstName) && actualLastName.equalsIgnoreCase(expectedLastName)){
+            System.out.println("First name and last name were changed correctly");
+        } else{
+            Assert.fail("Expected name is: "+expectedFirstName+" Actual name is: "+actualFirstName+" Expected last name is: "+expectedLastName+" Actual last name is: "+actualLastName+". Error: name was changed to incorrect one.");
+        }
     }
 
 }

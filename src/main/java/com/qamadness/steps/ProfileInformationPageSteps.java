@@ -12,13 +12,13 @@ public class ProfileInformationPageSteps extends ScenarioSteps {
     ProfileInformationPage profileInformationPage;
 
     @Step
-    public void type_First_Name (){
-        profileInformationPage.enterFirstName();
+    public void type_First_Name (String expectedFirstName){
+        profileInformationPage.enterFirstName(expectedFirstName);
     }
 
     @Step
-    public void type_Last_Name (){
-        profileInformationPage.enterLastName();
+    public void type_Last_Name (String expectedLastName){
+        profileInformationPage.enterLastName(expectedLastName);
     }
 
     @Step
@@ -27,8 +27,8 @@ public class ProfileInformationPageSteps extends ScenarioSteps {
     }
 
     @Step
-    public void check_Saved_User_Name (){
-        profileInformationPage.checkUserName();
+    public void check_Saved_User_Name (String expectedFirstName, String expectedLastName){
+        profileInformationPage.checkUserName(expectedFirstName, expectedLastName);
     }
 
 

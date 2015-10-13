@@ -21,4 +21,39 @@ public class ProductDetailsPageSteps extends ScenarioSteps {
         return productDetailsPage.getProductName();
     }
 
+    @Step
+    public void click_Write_Review_Link (){
+        productDetailsPage.clickWriteReviewLink();
+    }
+
+    @Step
+    public void select_5_Stars_Price_Rating (){
+        productDetailsPage.selectPriceRating();
+    }
+
+    @Step
+    public void select_4_Stars_Value_Rating (){
+        productDetailsPage.selectValueRating();
+    }
+
+    @Step
+    public void select_3_Stars_Quality_Rating (){
+        productDetailsPage.selectQualityRating();
+    }
+
+    @Step
+    public void enter_Review_Summary (String reviewSummary){
+        productDetailsPage.enterReviewSummary(reviewSummary);
+    }
+
+    @Step
+    public void enter_Review (String review){
+        productDetailsPage.enterReview(review);
+    }
+
+    @Step
+    public void submit_Review (){
+        productDetailsPage.clickSubmitReviewBtn();
+    }
+
 }

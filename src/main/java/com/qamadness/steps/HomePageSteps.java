@@ -66,4 +66,9 @@ public class HomePageSteps extends ScenarioSteps {
         homePage.clickCollaborativeCartsLink();
     }
 
+    @Step
+    public void  open_My_Reviews_Page (){
+        homePage.clickMyReviewsLink();
+    }
+
 }

@@ -43,6 +43,9 @@ public class HomePage extends PageObject {
     @FindBy (xpath = "//ul[@id='nav-my-account']/li[1]/a")
     WebElementFacade profileInfoLink;
 
+    @FindBy (xpath = "//ul[@id='nav-my-account']/li[10]/a")
+    WebElementFacade collaborativeCartsLink;
+
     public HomePage() {}
 
     public void checkIsUserLoggedIn (){
@@ -103,6 +106,10 @@ public class HomePage extends PageObject {
 
     public void clickLogoutLink (){
         logoutLink.click();
+    }
+
+    public void clickCollaborativeCartsLink (){
+        collaborativeCartsLink.click();
     }
 
 }

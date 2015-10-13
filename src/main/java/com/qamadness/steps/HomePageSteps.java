@@ -61,4 +61,9 @@ public class HomePageSteps extends ScenarioSteps {
         homePage.clickLogoutLink();
     }
 
+    @Step
+    public void open_Collaborative_Carts_Page (){
+        homePage.clickCollaborativeCartsLink();
+    }
+
 }

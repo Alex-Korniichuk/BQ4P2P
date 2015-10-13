@@ -10,7 +10,7 @@ import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.yecht.Data;
+
 
 /**
  * Created by alexandrakorniichuk on 09.10.15.
@@ -43,7 +43,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-44")
 
-    @Test
+    @Pending @Test
     public void change_password (){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
@@ -103,7 +103,7 @@ public class ProfileInformationStory {
         profileInformationPageSteps.save_Preferences();
     }
 
-    @Test
+    @Pending @Test
     public void change_currency_and_check_it_on_Supplier_Page (){
         profileInformationPageSteps.select_Currency("EUR");
         profileInformationPageSteps.save_Preferences();

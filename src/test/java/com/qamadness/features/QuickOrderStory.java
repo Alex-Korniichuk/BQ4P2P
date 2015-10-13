@@ -37,6 +37,7 @@ public class QuickOrderStory {
     @Steps
     public QuickOrderPageSteps quickOrderPageSteps;
 
+    //Test
     @Steps
     public ShoppingCartPageSteps shoppingCartPageSteps;
 

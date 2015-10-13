@@ -51,5 +51,30 @@ public class ProfileInformationPageSteps extends ScenarioSteps {
         profileInformationPage.clickSavePassBtn();
     }
 
+    @Step
+    public void select_Language (String languageValue){
+        profileInformationPage.selectLanguage(languageValue);
+    }
+
+    @Step
+    public void save_Preferences (){
+        profileInformationPage.clickSavePreferencesBtn();
+    }
+
+    @Step
+    public void check_That_Language_Is_Changed_To_FR (){
+        profileInformationPage.checkFRLanguage();
+    }
+
+    @Step
+    public void select_Currency (String currencyValue){
+        profileInformationPage.selectCurrency(currencyValue);
+    }
+
+    @Step
+    public void check_Currency_On_Shop_By_Supplier_Page (String actualCurrency, String expectedCurrency){
+        profileInformationPage.check_Currency(actualCurrency, expectedCurrency);
+    }
+
 
 }

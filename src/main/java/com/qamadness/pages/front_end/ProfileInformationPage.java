@@ -42,6 +42,19 @@ public class ProfileInformationPage extends PageObject {
     @FindBy (xpath = "//div[@class='my-account']/form[2]/fieldset/div[2]/div[4]/button[2]")
     WebElementFacade savePassBtn;
 
+    @FindBy (xpath = "//select[@id='default_language']")
+    WebElementFacade languageDropDown;
+
+    @FindBy (xpath = "//select[@id='default_currency']")
+    WebElementFacade currencyDropDown;
+
+    @FindBy (xpath = "//form[@id='form-validate']/fieldset/div[2]/div[3]/button[2]")
+    WebElementFacade savePreferencesBtn;
+
+    @FindBy (xpath = "//form[@id='form-validate']/fieldset/div[1]/legend/span")
+    WebElementFacade preferencesSectionHeader;
+
+
     public ProfileInformationPage (){}
 
     public void enterFirstName (String name){
@@ -83,6 +96,36 @@ public class ProfileInformationPage extends PageObject {
 
     public void clickSavePassBtn (){
         savePassBtn.click();
+    }
+
+    public void selectLanguage (String languageValue){
+        languageDropDown.selectByValue(languageValue);
+    }
+
+    public void selectCurrency (String currencyValue){
+        currencyDropDown.selectByValue(currencyValue);
+    }
+
+    public void clickSavePreferencesBtn (){
+        savePreferencesBtn.click();
+    }
+
+    public void checkFRLanguage (){
+        String actualSectionHeader = preferencesSectionHeader.getText();
+        String expectedSectionHeaderFR = "Mon Profil";
+        if (actualSectionHeader.equalsIgnoreCase(expectedSectionHeaderFR)){
+            System.out.println ("Language is changed to FR");
+        } else {
+            Assert.fail("Language isn't changed correctly. Section header is: "+actualSectionHeader+". Expected FR section header is: "+expectedSectionHeaderFR);
+        }
+    }
+
+    public void check_Currency (String actualCurrency, String expectedCurrency){
+        if (actualCurrency.equalsIgnoreCase(expectedCurrency)){
+            System.out.println("Currency is changed correctly");
+        } else {
+            Assert.fail("Actual currency is: "+actualCurrency+". Expected currency is: "+expectedCurrency);
+        }
     }
 
 }

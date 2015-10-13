@@ -30,4 +30,8 @@ public class ShopBySupplierPageSteps extends ScenarioSteps {
     public void open_Product_Details_Page (){
         shopBySupplierPage.openProductDetailsPage();
     }
+    @Step
+    public String get_Product_Currency (){
+        return shopBySupplierPage.getCurrency();
+    }
 }

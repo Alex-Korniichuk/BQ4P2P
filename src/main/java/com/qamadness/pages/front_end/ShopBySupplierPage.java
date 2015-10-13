@@ -20,6 +20,9 @@ public class ShopBySupplierPage extends PageObject {
     @FindBy (xpath = "//div[@id='product-listing-container']/div[1]/div/div[@class='product-name name-container']/a")
     WebElementFacade productName;
 
+    @FindBy (xpath = "//div[@id='product-listing-container']/div[1]/div/div[@class='product-price']/span/span")
+    WebElementFacade productPrice;
+
     public ShopBySupplierPage(){
     }
 
@@ -54,5 +57,14 @@ public class ShopBySupplierPage extends PageObject {
     public void openProductDetailsPage(){
         productName.click();
     }
+
+    public String getCurrency (){
+        String price = productPrice.getText();
+        String currency = price.substring(0,1);
+        System.out.print("Currency is: "+currency);
+        return currency;
+    }
+
+
 
 }

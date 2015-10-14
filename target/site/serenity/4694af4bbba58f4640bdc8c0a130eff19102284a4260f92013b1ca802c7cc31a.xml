@@ -1,0 +1,24 @@
+<acceptance-test-run title="Products can be removed from comparison" name="products_can_be_removed_from_comparison" steps="1" successful="0" failures="0" skipped="0" ignored="0" pending="1" result="PENDING" duration="0" timestamp="2015-10-14T12:38:45.886+02:00">
+  <user-story id="com.qamadness.features.CompareProductsStory" name="Compare products story" path="com.qamadness.features"/>
+  <tags>
+    <tag name="Compare products story" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>email</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row>
+        <value>bqtester2015@gmail.com</value>
+        <value>bquest1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-step result="PENDING" duration="0">
+    <description>Products can be removed from comparison</description>
+  </test-step>
+</acceptance-test-run>

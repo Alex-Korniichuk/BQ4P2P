@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b426da7-dae6-431b-a7e6-94602610c768" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/HomePage.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/HomePageSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/HomePageSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyReviewsStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyReviewsStory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/MyTagsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/MyTagsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/MyTagsSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/MyTagsSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyTagsStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyTagsStory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/ProductDetailsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/ProductDetailsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/ProductDetailsPageSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/steps/ProductDetailsPageSteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BQ4P2P.iws" />
@@ -777,7 +768,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444814993970</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Bug fixes">
+      <created>1444819232447</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1444819232447</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">

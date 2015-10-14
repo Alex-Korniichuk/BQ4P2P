@@ -1,0 +1,137 @@
+<acceptance-test-run title="Tag can be added from product details page" name="Tag_can_be_added_from_product_details_page" steps="16" successful="16" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="0" timestamp="2015-10-14T12:40:03.752+02:00">
+  <user-story id="com.qamadness.features.MyTagsStory" name="My tags story" path="com.qamadness.features"/>
+  <issues>
+    <issue>AUT-43</issue>
+  </issues>
+  <tags>
+    <tag name="My tags story" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>email</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>bqtester2015@gmail.com</value>
+        <value>bquest1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="Tag can be added from product details page" result="SUCCESS">
+    <test-group name="[1] {password=bquest1, email=bqtester2015@gmail.com}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="18253">
+        <screenshots>
+          <screenshot image="dd50799485539b79a2b5c13389a9bc85_NONE.png"/>
+        </screenshots>
+        <description>Open  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="566">
+        <screenshots>
+          <screenshot image="dd50799485539b79a2b5c13389a9bc85_NONE.png"/>
+          <screenshot image="a71e29d353e8f937a47ed07ff5b8afc4_NONE.png"/>
+        </screenshots>
+        <description>Enter  credentials: &lt;span class=&apos;step-parameter&apos;&gt;bqtester2015@gmail.com, bquest1&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="5738">
+        <screenshots>
+          <screenshot image="e8a7b83589885681e54653ab32074075_NONE.png"/>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+        </screenshots>
+        <description>Click  login  btn</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2475">
+        <screenshots>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+        </screenshots>
+        <description>Check  is  user  logged  in</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="531">
+        <screenshots>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+          <screenshot image="a446ca3ba9b88be2f00923c3bdaedac9_NONE.png"/>
+        </screenshots>
+        <description>Click  main  menu  btn</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="3145">
+        <screenshots>
+          <screenshot image="120b88a549ace5024e005fac819bf666_NONE.png"/>
+          <screenshot image="8b7e19ad0a9e40fccb076c96f345ead4_NONE.png"/>
+        </screenshots>
+        <description>Click  shop  by  supplier  link</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="16573">
+        <screenshots>
+          <screenshot image="14c820ab81cbe0f1272af3b81af6602b_NONE.png"/>
+          <screenshot image="5593ca4d9597dea5121b6ec94d9c7589_NONE.png"/>
+        </screenshots>
+        <description>Open  supplier  page  with  products</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="12365">
+        <screenshots>
+          <screenshot image="5593ca4d9597dea5121b6ec94d9c7589_NONE.png"/>
+          <screenshot image="8b7e19ad0a9e40fccb076c96f345ead4_NONE.png"/>
+        </screenshots>
+        <description>Open  product  details  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2817">
+        <screenshots>
+          <screenshot image="63b3633a01db6d7c60f528469fe5d93f_NONE.png"/>
+          <screenshot image="03c86ac0b088e635e42085e564bc22f0_NONE.png"/>
+        </screenshots>
+        <description>Click  add  tag  button</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="286">
+        <screenshots>
+          <screenshot image="f6c5049baa4e0db449ce3f1695ee74de_NONE.png"/>
+          <screenshot image="366fcf9ad43143868dfcec6380c65afa_NONE.png"/>
+        </screenshots>
+        <description>Enter  tag  name</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="395">
+        <screenshots>
+          <screenshot image="20d87e4c5d380b6649c736c55bc2ae90_NONE.png"/>
+          <screenshot image="a863b735cbd49518e9d5f61a495fa3ec_NONE.png"/>
+        </screenshots>
+        <description>Click  add  tag  confirm  button</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="542">
+        <screenshots>
+          <screenshot image="6f247bdfc583dd6b5d56085a2e577344_NONE.png"/>
+          <screenshot image="1a939b250d132f3e5802742403bd86dc_NONE.png"/>
+        </screenshots>
+        <description>Click  main  menu  btn</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="588">
+        <screenshots>
+          <screenshot image="57b5803e1c4575709ee1413e1552579b_NONE.png"/>
+          <screenshot image="624489a53532fcd6e5cfb3449e6ec082_NONE.png"/>
+        </screenshots>
+        <description>Expand  my  account  tab</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="7539">
+        <screenshots>
+          <screenshot image="452772fc7c58e9c67afaf7d8486b9c1f_NONE.png"/>
+          <screenshot image="8b7e19ad0a9e40fccb076c96f345ead4_NONE.png"/>
+        </screenshots>
+        <description>Open  my  tags  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="4794">
+        <screenshots>
+          <screenshot image="c9a5ebbd29bdf0be7d88245299f1b751_NONE.png"/>
+        </screenshots>
+        <description>Check  tag  on  my  tags  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="564">
+        <screenshots>
+          <screenshot image="c9a5ebbd29bdf0be7d88245299f1b751_NONE.png"/>
+          <screenshot image="ebbd322ea3a3e284a56ad38e5b2fb346_NONE.png"/>
+        </screenshots>
+        <description>Click appropriate  tag</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

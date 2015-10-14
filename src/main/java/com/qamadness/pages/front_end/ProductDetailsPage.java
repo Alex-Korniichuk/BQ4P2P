@@ -7,6 +7,8 @@ import static org.junit.Assert.assertTrue;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 
 public class ProductDetailsPage extends PageObject {
@@ -42,6 +44,15 @@ public class ProductDetailsPage extends PageObject {
 
     @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[2]/button[2]")
     WebElementFacade submitReviewBtn;
+
+    @FindBy(css = ".tag-link>a")
+    WebElementFacade addTagBtn;
+
+    @FindBy(xpath = ".//*[@id='productTagName']")
+    WebElementFacade tagNameField;
+
+    @FindBy(css = "#bq-ui-2")
+    WebElementFacade addTagConfirmBtn;
 
     public ProductDetailsPage () {}
 
@@ -84,5 +95,17 @@ public class ProductDetailsPage extends PageObject {
     public void clickSubmitReviewBtn (){
         submitReviewBtn.click();
     }
+
+    public void clickAddTagBtn() {addTagBtn.click();}
+
+    public void enterTagName() {
+        waitForRenderedElementsToBePresent(By.cssSelector("#productTagName"));
+        WebElement nameField = getDriver().findElement(By.cssSelector("#productTagName"));
+        nameField.sendKeys("autotest");
+    }
+
+    public void clickAddTagConfirmBtn() {addTagConfirmBtn.click();}
+
+    //public void enterTagName() {tagNameField.sendKeys("autotest");}
 
 }

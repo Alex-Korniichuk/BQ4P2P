@@ -44,7 +44,11 @@ public class ShopBySupplierPage extends PageObject {
 
     public void addProductsToComparison(){
         for (int i=1; i<=2; i++){
+
+            waitForRenderedElementsToBePresent(By.xpath("//*[@id='product-listing-container']/div["+i+"]/div/div[2]/div[1]/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
+
             waitForRenderedElementsToBePresent(By.xpath("//*[@id='product-listing-container']/div[" + i + "]/div/div[2]/div[1]/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
+
             WebElement compareLink = getDriver().findElement(By.xpath("//*[@id='product-listing-container']/div["+i+"]/div/div[2]/div[1]/div/a"));
             compareLink.click();
         }
@@ -60,6 +64,7 @@ public class ShopBySupplierPage extends PageObject {
         productName.click();
     }
 
+
     public String getCurrency (){
         String price = productPrice.getText();
         String currency = price.substring(0,1);
@@ -70,3 +75,4 @@ public class ShopBySupplierPage extends PageObject {
 
 
 }
+

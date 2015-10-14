@@ -58,6 +58,7 @@ public class MyTagsStory {
         myTagsSteps.clickMyAcc();
         myTagsSteps.clickMyTagsLink();
         myTagsSteps.check_Tag_Page();
-        //myTagsSteps.loggOut();
+        homePageSteps.click_Main_Menu_Btn();
+        myTagsSteps.loggOut();
     }
 }

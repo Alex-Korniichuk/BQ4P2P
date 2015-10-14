@@ -1,0 +1,117 @@
+<acceptance-test-run title="Product can be added to cart from  compare  products page" name="product_can_be_added_to_cart_from_Compare_Products_page" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="0" timestamp="2015-10-14T11:04:51.705+02:00">
+  <user-story id="com.qamadness.features.CompareProductsStory" name="Compare products story" path="com.qamadness.features"/>
+  <issues>
+    <issue>#AUT-36</issue>
+  </issues>
+  <tags>
+    <tag name="Compare products story" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>email</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>bqtester2015@gmail.com</value>
+        <value>bquest1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="Product can be added to cart from  compare  products page" result="SUCCESS">
+    <test-group name="[1] {password=bquest1, email=bqtester2015@gmail.com}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="15979">
+        <screenshots>
+          <screenshot image="dd50799485539b79a2b5c13389a9bc85_NONE.png"/>
+        </screenshots>
+        <description>Open  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="497">
+        <screenshots>
+          <screenshot image="dd50799485539b79a2b5c13389a9bc85_NONE.png"/>
+          <screenshot image="3181299c23abb25047a5b93591222cd7_NONE.png"/>
+        </screenshots>
+        <description>Enter  credentials: &lt;span class=&apos;step-parameter&apos;&gt;bqtester2015@gmail.com, bquest1&lt;/span&gt;</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="5270">
+        <screenshots>
+          <screenshot image="3181299c23abb25047a5b93591222cd7_NONE.png"/>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+        </screenshots>
+        <description>Click  login  btn</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2429">
+        <screenshots>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+        </screenshots>
+        <description>Check  is  user  logged  in</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="527">
+        <screenshots>
+          <screenshot image="3ff73fe1f8914e883263ec20c50fbadd_NONE.png"/>
+          <screenshot image="7da0c2d92da2d047c646e8879fc3dbbd_NONE.png"/>
+        </screenshots>
+        <description>Click  main  menu  btn</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="11384">
+        <screenshots>
+          <screenshot image="372defe026b946db342e45c21a97ee05_NONE.png"/>
+          <screenshot image="cef15d2f74dbf9d58b04e470051767a8_NONE.png"/>
+        </screenshots>
+        <description>Click  shop  by  supplier  link</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="5694">
+        <screenshots>
+          <screenshot image="aaa3991cd7929ad4f46735186db6ce2a_NONE.png"/>
+          <screenshot image="9c19b8419c04013c4cc1cd6dbb164919_NONE.png"/>
+        </screenshots>
+        <description>Open  supplier  page  with  products</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1201">
+        <screenshots>
+          <screenshot image="9c19b8419c04013c4cc1cd6dbb164919_NONE.png"/>
+          <screenshot image="2c8a1d0fb72ccb1de605c33908e6f4d9_NONE.png"/>
+        </screenshots>
+        <description>Add  products  to  comparison</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="8069">
+        <screenshots>
+          <screenshot image="7c195d127d80f51d1670d17c32cb841c_NONE.png"/>
+          <screenshot image="68760faf3febdf9e5e759ff88926ea8c_NONE.png"/>
+        </screenshots>
+        <description>Go  to  comparison  page</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="353">
+        <screenshots>
+          <screenshot image="68760faf3febdf9e5e759ff88926ea8c_NONE.png"/>
+          <screenshot image="d7a7d3153fc5994e128039a9e096bbe1_NONE.png"/>
+        </screenshots>
+        <description>Add  product  to  cart</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="22782">
+        <screenshots>
+          <screenshot image="ab4e5f7155ea512e2d3230c4efc9e77c_NONE.png"/>
+          <screenshot image="8b7e19ad0a9e40fccb076c96f345ead4_NONE.png"/>
+        </screenshots>
+        <description>Remove  all  products  from  comparison</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="24913">
+        <screenshots>
+          <screenshot image="2ea6253a40f32d5b09b20268d4146aba_NONE.png"/>
+          <screenshot image="8b7e19ad0a9e40fccb076c96f345ead4_NONE.png"/>
+        </screenshots>
+        <description>Open  shopping  cart</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="15009">
+        <screenshots>
+          <screenshot image="49df08a40211dde15f82bed811390336_NONE.png"/>
+          <screenshot image="6b1e8c476035b9dedf9af4f7ed7f78c8_NONE.png"/>
+        </screenshots>
+        <description>Check  is  product  in  the  cart</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,27 @@
+<acceptance-test-run title="Create new collaborative group" name="create_new_collaborative_group" steps="1" successful="0" failures="0" skipped="0" ignored="0" pending="1" result="PENDING" duration="0" timestamp="2015-10-14T11:02:56.107+02:00">
+  <user-story id="com.qamadness.features.CollaborativeCartsStory" name="Collaborative carts story" path="com.qamadness.features"/>
+  <issues>
+    <issue>AUT-49</issue>
+  </issues>
+  <tags>
+    <tag name="Collaborative carts story" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>email</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row>
+        <value>bqtester2015@gmail.com</value>
+        <value>bquest1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-step result="PENDING" duration="0">
+    <description>Create new collaborative group</description>
+  </test-step>
+</acceptance-test-run>

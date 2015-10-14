@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.qamadness.features.CompareProductsStory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 118.461 sec - in com.qamadness.features.CompareProductsStory

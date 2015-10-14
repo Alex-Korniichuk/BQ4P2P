@@ -28,7 +28,7 @@ public class ShopBySupplierPage extends PageObject {
     public void openSupplierPageWithProducts (){
         int suppliersQty = getDriver().findElements(By.xpath("//ul[@id='supplierList']/li")).size();
         for (int i=1; i<=suppliersQty; i++){
-            waitForRenderedElementsToBePresent(By.xpath("//ul[@id='supplierList']/li[" + i + "]/div/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);;
+            waitForRenderedElementsToBePresent(By.xpath("//ul[@id='supplierList']/li[" + i + "]/div/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
             getDriver().findElement(By.xpath("//ul[@id='supplierList']/li["+i+"]/div/div/a")).click();
             if(getDriver().findElements(By.xpath("//div[@class='product-item']")).size()>2){
                 System.out.print("Category has products");

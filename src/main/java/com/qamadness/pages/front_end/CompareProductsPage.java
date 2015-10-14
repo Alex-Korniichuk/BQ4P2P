@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CompareProductsPage extends PageObject {
 
@@ -30,11 +31,13 @@ public class CompareProductsPage extends PageObject {
     }
 
     public void removeCompareProducts (){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         int productsQty = allProducts.size();
         for (int i=1; i<=productsQty; i++){
             waitForRenderedElementsToBePresent(By.xpath("//th[@class='product'][1]/div/div[1]/div/a"));
             getDriver().findElement(By.xpath("//th[@class='product'][1]/div/div[1]/div/a")).click();
         }
+        resetImplicitTimeout();
     }
 
 }

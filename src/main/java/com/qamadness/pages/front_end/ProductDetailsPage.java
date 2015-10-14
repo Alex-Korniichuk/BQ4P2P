@@ -10,6 +10,8 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class ProductDetailsPage extends PageObject {
 
@@ -99,6 +101,7 @@ public class ProductDetailsPage extends PageObject {
     public void clickAddTagBtn() {addTagBtn.click();}
 
     public void enterTagName() {
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         waitForRenderedElementsToBePresent(By.cssSelector("#productTagName"));
         WebElement nameField = getDriver().findElement(By.cssSelector("#productTagName"));
         nameField.sendKeys("autotest");

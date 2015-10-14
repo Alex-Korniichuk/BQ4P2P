@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by alexandrakorniichuk on 01.10.15.
  */
@@ -24,6 +26,7 @@ public class QuickOrderPage extends PageObject {
     }
 
     public void uploadFile() {
+        setImplicitTimeout(120, TimeUnit.SECONDS);
         ((JavascriptExecutor) getDriver()).executeScript("document.getElementById('customer_sku_csv').style.opacity = '100';");
         WebElement fileInput = getDriver().findElement(By.id("customer_sku_csv"));
         //fileInput.sendKeys("/Users/alexandrakorniichuk/IdeaProjects/BQ4P2P/src/test/resources/QuickOrderProducts.csv"); - use this method if upload method doesn't work

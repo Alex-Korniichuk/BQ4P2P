@@ -2,10 +2,569 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b426da7-dae6-431b-a7e6-94602610c768" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/CompareProductsPage.java" afterPath="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/CompareProductsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyReviewsStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/MyReviewsStory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/qamadness/features/OrderTemplatesStory.java" afterPath="$PROJECT_DIR$/src/test/java/com/qamadness/features/OrderTemplatesStory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_30.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_lambdaj_lambdaj_2_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_awaitility_awaitility_1_6_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_opera_operadriver_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_appium_java_client_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_5_2_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mx4j_mx4j_tools_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_core_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_junit_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_serenity_bdd_serenity_report_resources_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_asciidoctor_asciidoctor_java_integration_0_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_1_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_3_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fluentlenium_fluentlenium_core_0_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_javax_el_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jruby_jruby_complete_1_7_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_6_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_rc_repacked_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_7_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webbitserver_webbit_0_4_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BQ4P2P.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/CollaborativeCartsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/CompareProductsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/HomePage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/LoginPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/MyOrderTemplatesPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/MyReviewsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/ProductDetailsPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/ProfileInformationPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/QuickOrderPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/ShopBySupplierPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/pages/front_end/ShoppingCartPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/CollaborativeCartsPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/CompareProductsPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/HomePageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/LoginSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/MyReviewsPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/OrderTemplatePageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/ProductDetailsPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/ProfileInformationPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/QuickOrderPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/ShopBySupplierPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/qamadness/steps/ShoppingCartPageSteps.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.CollaborativeCartsStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.CompareProductsStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.MyReviewsStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.OrderTemplatesStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.ProfileInformationStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-com.qamadness.features.QuickOrderStory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.CollaborativeCartsStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.CompareProductsStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.MyReviewsStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.OrderTemplatesStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.ProfileInformationStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/com.qamadness.features.QuickOrderStory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/11a14ccc8b0811243db29984f904cb32652efbb9cec17a0bb0152a7d76984832.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/11a14ccc8b0811243db29984f904cb32652efbb9cec17a0bb0152a7d76984832.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/11a14ccc8b0811243db29984f904cb32652efbb9cec17a0bb0152a7d76984832.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/2593ee3ca402fe13bb3ed270165a55f6d7bc8d45b855757a7c5a8551dcdf74e6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/2593ee3ca402fe13bb3ed270165a55f6d7bc8d45b855757a7c5a8551dcdf74e6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/2593ee3ca402fe13bb3ed270165a55f6d7bc8d45b855757a7c5a8551dcdf74e6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/2c8a1d0fb72ccb1de605c33908e6f4d9_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/2ea6253a40f32d5b09b20268d4146aba_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3181299c23abb25047a5b93591222cd7_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/372defe026b946db342e45c21a97ee05_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3d2871ef9911e9892794a9042e262e6b82ae98dff337dd2d2e4d80be2072e38e.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3d2871ef9911e9892794a9042e262e6b82ae98dff337dd2d2e4d80be2072e38e.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3f6753f7a964ff5f7995c939bd70d4d901cd0d505dcc91d3fed5207288649a22.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3f6753f7a964ff5f7995c939bd70d4d901cd0d505dcc91d3fed5207288649a22.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3f6753f7a964ff5f7995c939bd70d4d901cd0d505dcc91d3fed5207288649a22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3ff73fe1f8914e883263ec20c50fbadd_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3ff7ca9cb710de597bfaead0383754518578d05c77fa6ea29c989bdbfb303396.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/3ff7ca9cb710de597bfaead0383754518578d05c77fa6ea29c989bdbfb303396.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4694af4bbba58f4640bdc8c0a130eff19102284a4260f92013b1ca802c7cc31a.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4694af4bbba58f4640bdc8c0a130eff19102284a4260f92013b1ca802c7cc31a.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4694af4bbba58f4640bdc8c0a130eff19102284a4260f92013b1ca802c7cc31a.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/49df08a40211dde15f82bed811390336_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4dd2a8cdcd36ec4f124b4aba6ef2db0d6074074fa4ff0b10de84a777ae655733.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4dd2a8cdcd36ec4f124b4aba6ef2db0d6074074fa4ff0b10de84a777ae655733.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/4dd2a8cdcd36ec4f124b4aba6ef2db0d6074074fa4ff0b10de84a777ae655733.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6245b38bcf22f64a07bc026f847febbc57b650ba8fbf26235accfb2621a57ae5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6245b38bcf22f64a07bc026f847febbc57b650ba8fbf26235accfb2621a57ae5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6245b38bcf22f64a07bc026f847febbc57b650ba8fbf26235accfb2621a57ae5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/68760faf3febdf9e5e759ff88926ea8c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6b1e8c476035b9dedf9af4f7ed7f78c8_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6cd41357e3cfd84f665222fe9354d7eb1f7a0012d931acda9b808685a59b4afb.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6cd41357e3cfd84f665222fe9354d7eb1f7a0012d931acda9b808685a59b4afb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6cd41357e3cfd84f665222fe9354d7eb1f7a0012d931acda9b808685a59b4afb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/6f4f77834bd98e9b58742cea4cfac1fc5e25250624fe3523a13535c2548d61cf.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/713932c16ec3201d134d3eda72867f1512466a37cf78abac1c571483a2889987.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/713932c16ec3201d134d3eda72867f1512466a37cf78abac1c571483a2889987.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/75e5a294838fc6fe0fda95b952782fad13d747fc96109abc49ee6a88f333aba4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/75e5a294838fc6fe0fda95b952782fad13d747fc96109abc49ee6a88f333aba4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/75e5a294838fc6fe0fda95b952782fad13d747fc96109abc49ee6a88f333aba4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/75e5a294838fc6fe0fda95b952782fad13d747fc96109abc49ee6a88f333aba4_screenshots.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/7c195d127d80f51d1670d17c32cb841c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/7c56a1b85365a04ebf0f165251f75b6bf5659cd53394d068b93271c89484921d.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/7c56a1b85365a04ebf0f165251f75b6bf5659cd53394d068b93271c89484921d.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/7da0c2d92da2d047c646e8879fc3dbbd_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/8479f0fc67ed111b0f60b1a74f3f6b9fd7d8a35910a77ed7ab0ee9c93956e095.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/86b626dc110ee98f6754db27209113ca5816ed260965f40f9f3b29dbd14d6230.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/86b626dc110ee98f6754db27209113ca5816ed260965f40f9f3b29dbd14d6230.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/86b626dc110ee98f6754db27209113ca5816ed260965f40f9f3b29dbd14d6230.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/8b7e19ad0a9e40fccb076c96f345ead4_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/95ef982fad6c90dff41a14d9b2677c177dc18c17db127eb2d6dd25dbcb37d563.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/95ef982fad6c90dff41a14d9b2677c177dc18c17db127eb2d6dd25dbcb37d563.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/9a9705be79c9ec9b815095d092577b1aacf23177706759cfbdcd0b220012bd25.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/9a9705be79c9ec9b815095d092577b1aacf23177706759cfbdcd0b220012bd25.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/9c19b8419c04013c4cc1cd6dbb164919_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-11a14ccc8b0811243db29984f904cb32652efbb9cec17a0bb0152a7d76984832.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-2593ee3ca402fe13bb3ed270165a55f6d7bc8d45b855757a7c5a8551dcdf74e6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-3f6753f7a964ff5f7995c939bd70d4d901cd0d505dcc91d3fed5207288649a22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-75e5a294838fc6fe0fda95b952782fad13d747fc96109abc49ee6a88f333aba4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-adccde17ea23a38d5a95eb3bdb0eed64e1a35b2114b4558f217ac8767950eae6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-c1baca34685fb8a8683e474afe9589e2b066345440b311376169d331c3b45f74.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/a5d3b647a5155edc6c8480e5cd8ef21e2c7c8019a9ce01209bfd6c55caa1e7fb.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/a5d3b647a5155edc6c8480e5cd8ef21e2c7c8019a9ce01209bfd6c55caa1e7fb.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/aaa3991cd7929ad4f46735186db6ce2a_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/ab4e5f7155ea512e2d3230c4efc9e77c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/ac18eee8d7680edda17acb21c0288d6c620db3d5bd2aa56966ce6a499850096e.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/ac18eee8d7680edda17acb21c0288d6c620db3d5bd2aa56966ce6a499850096e.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/adccde17ea23a38d5a95eb3bdb0eed64e1a35b2114b4558f217ac8767950eae6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/adccde17ea23a38d5a95eb3bdb0eed64e1a35b2114b4558f217ac8767950eae6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/adccde17ea23a38d5a95eb3bdb0eed64e1a35b2114b4558f217ac8767950eae6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/b08ee49887ecae038a7621c3853f75e61b94884b3caab157e032cde84ba4e864.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/b08ee49887ecae038a7621c3853f75e61b94884b3caab157e032cde84ba4e864.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/b880603329739db8fdbfc92ce891032c96227ceff5baf6a17ffd90b23a8a52b9.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/b880603329739db8fdbfc92ce891032c96227ceff5baf6a17ffd90b23a8a52b9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/browser-firefox.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/build-info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/c1baca34685fb8a8683e474afe9589e2b066345440b311376169d331c3b45f74.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/c1baca34685fb8a8683e474afe9589e2b066345440b311376169d331c3b45f74.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/c1baca34685fb8a8683e474afe9589e2b066345440b311376169d331c3b45f74.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/c811cdd4ce1368d902279a7411058d3cffd41879a8485a28b2a86d0fca26419b.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/c811cdd4ce1368d902279a7411058d3cffd41879a8485a28b2a86d0fca26419b.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/capabilities.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/cef15d2f74dbf9d58b04e470051767a8_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/css/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/css/link.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/css/tables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/d6d78d227c4156a74573c73fc67edc9c3b56e0273384b1d6e05e7d15d3a6174a.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/d6d78d227c4156a74573c73fc67edc9c3b56e0273384b1d6e05e7d15d3a6174a.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/d7a7d3153fc5994e128039a9e096bbe1_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/d968699b85a130ff3aed3a292bb148dcfbbb9e8a38aeac765bda2426343f0647.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/d968699b85a130ff3aed3a292bb148dcfbbb9e8a38aeac765bda2426343f0647.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/dae3124eb7ab1b54f57de17aab13163a5653948c6b1b2defa27130121da0adfb.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/dae3124eb7ab1b54f57de17aab13163a5653948c6b1b2defa27130121da0adfb.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/css/jquery.dataTables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/css/jquery.dataTables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/css/jquery.dataTables_themeroller.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/back_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/back_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/back_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/forward_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/forward_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/forward_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/images/sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/jqueryui/dataTables.jqueryui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/jqueryui/dataTables.jqueryui.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/jqueryui/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/js/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/js/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/datatables/1.10.4/media/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/dd50799485539b79a2b5c13389a9bc85_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/df333455dc6c05d2bad17753c5d15a9a1581d534b788234e8e0f9260ecc7ef8e.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/df333455dc6c05d2bad17753c5d15a9a1581d534b788234e8e0f9260ecc7ef8e.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/dygraph/1.1.0/dygraph-combined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/e29619b2e6567daf526e2012341a623141993af401cc249e1bf91ecccf758bd4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/e29619b2e6567daf526e2012341a623141993af401cc249e1bf91ecccf758bd4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/excanvas/3/excanvas.compiled.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/excanvas/3/excanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fabb0bf1fb56da886653fe721f58afdf2d1a683ed73b22ac078d47156920c17e.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fabb0bf1fb56da886653fe721f58afdf2d1a683ed73b22ac078d47156920c17e.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fb81c01da4333e922283c1bd97b0df6601764ff04a69ec457f73350c72a32fd9.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fb81c01da4333e922283c1bd97b0df6601764ff04a69ec457f73350c72a32fd9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fe462ac8200be1eb3995e0ad7874efe58c9e6607e3a9d516fc7cf0c4f73fa947.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/fe462ac8200be1eb3995e0ad7874efe58c9e6607e3a9d516fc7cf0c4f73fa947.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/css/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/css/font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/font-awesome-ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/bg_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/bg_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/bottomm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/cross.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-appium.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-firefox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-htmlunit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-iexplorer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-opera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-phantomjs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-provided.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-remote.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/driver-safari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/fail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/greenline.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/ico-q.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/icon-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/ignor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/links_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/menu_f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/menu_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/menu_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/middle-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/middle-right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/middle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/pending.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/serenity-bdd-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/skip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/small-middle-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/small-middle-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/small-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/tablebg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/tick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/top-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/top-right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/topm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/traffic-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/traffic-in-progress.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/traffic-orange.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/traffic-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/traffic-yellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/images/worker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/2.0.1/jit-yc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/2.0.1/jit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/AreaChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/BarChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/ForceDirected.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/ForceDirected3D.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/HeatMap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Hypertree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Icicle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Other.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/PieChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/RGraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Spacetree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Sunburst.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/TimeGraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/Treemap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/col1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/col2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jit/css/gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/jquery.jqplot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/jquery.jqplot.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.BezierCurveRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.BezierCurveRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.barRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.barRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.blockRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.blockRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.bubbleRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.bubbleRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasAxisLabelRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasAxisLabelRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasAxisTickRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasAxisTickRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasOverlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasOverlay.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasTextRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.canvasTextRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.categoryAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.categoryAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.ciParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.ciParser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.cursor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.dateAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.dateAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.donutRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.donutRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.dragable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.dragable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.enhancedLegendRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.enhancedLegendRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.funnelRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.funnelRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.highlighter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.highlighter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.json2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.json2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.logAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.logAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mekkoAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mekkoAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mekkoRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mekkoRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.meterGaugeRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.meterGaugeRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mobile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.mobile.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.ohlcRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.ohlcRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pieRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pieRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pointLabels.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pointLabels.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidGridRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidGridRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.pyramidRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.trendline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqplot/1.0.8/plugins/jqplot.trendline.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqtree/0.22/jqtree-circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqtree/0.22/jqtree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqtree/0.22/tree.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/external/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_flat_55_999999_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_flat_75_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_glass_45_0078ae_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_glass_55_f8da4e_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_glass_75_79c9ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_0078ae_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_056b93_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_d8e7f3_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_e0fdff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_f5e175_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_f7a50d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/images/ui-icons_fcd113_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.structure.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.structure.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/jqueryui/1.11.2-start/jquery-ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/images/dev7logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/images/nemo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/images/toystory.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/images/up.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/images/walle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/scripts/jquery-1.9.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/demo/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/jquery.nivo.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/jquery.nivo.slider.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/nivo-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/nivoslider.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/bar/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/bar/bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/bar/bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/bar/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/dark/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/dark/bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/dark/dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/dark/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/default/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/default/bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/default/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/default/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/light/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/light/bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/light/light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/nivo-slider/3.2/themes/light/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/results.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_2c8a1d0fb72ccb1de605c33908e6f4d9_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_2ea6253a40f32d5b09b20268d4146aba_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_3181299c23abb25047a5b93591222cd7_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_372defe026b946db342e45c21a97ee05_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_3ff73fe1f8914e883263ec20c50fbadd_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_49df08a40211dde15f82bed811390336_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_68760faf3febdf9e5e759ff88926ea8c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_6b1e8c476035b9dedf9af4f7ed7f78c8_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_7c195d127d80f51d1670d17c32cb841c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_7da0c2d92da2d047c646e8879fc3dbbd_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_8b7e19ad0a9e40fccb076c96f345ead4_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_9c19b8419c04013c4cc1cd6dbb164919_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_aaa3991cd7929ad4f46735186db6ce2a_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_ab4e5f7155ea512e2d3230c4efc9e77c_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_cef15d2f74dbf9d58b04e470051767a8_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_d7a7d3153fc5994e128039a9e096bbe1_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scaled_dd50799485539b79a2b5c13389a9bc85_NONE.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scripts/imgpreview.full.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scripts/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/serenity/scripts/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/QuickOrderProducts.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestingData.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/CollaborativeCartsStory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/CompareProductsStory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/MyReviewsStory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/OrderTemplatesStory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/ProfileInformationStory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/qamadness/features/QuickOrderStory.class" afterPath="" />
     </list>
     <ignored path="BQ4P2P.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +601,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompareProductsStory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompareProductsStory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64315355">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32126698">
+              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -117,6 +686,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/qamadness/features/CollaborativeCartsStory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/CompareProductsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -163,6 +733,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,185 +753,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serenity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qamadness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qamadness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front_end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BQ4P2P" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qamadness" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -729,7 +1125,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -737,10 +1133,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3195739" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31917807" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24444444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24391988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -792,14 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qamadness/pages/front_end/ShoppingCartPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1242,8 +1630,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qamadness/features/CompareProductsStory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64315355">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32126698">
+          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -56,4 +56,13 @@ public class ProductDetailsPageSteps extends ScenarioSteps {
         productDetailsPage.clickSubmitReviewBtn();
     }
 
+    @Step
+    public void click_Add_Tag_Button() {productDetailsPage.clickAddTagBtn();}
+
+    @Step
+    public void enter_Tag_Name() {productDetailsPage.enterTagName();}
+
+    @Step
+    public void click_Add_Tag_Confirm_Button() {productDetailsPage.clickAddTagConfirmBtn();}
+
 }

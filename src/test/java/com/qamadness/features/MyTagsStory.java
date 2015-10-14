@@ -1,9 +1,6 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.HomePageSteps;
-import com.qamadness.steps.LoginSteps;
-import com.qamadness.steps.ShopBySupplierPageSteps;
-import com.qamadness.steps.MyTagsSteps;
+import com.qamadness.steps.*;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
@@ -39,7 +36,10 @@ public class MyTagsStory {
     @Steps
     public MyTagsSteps myTagsSteps;
 
-    @Issue("AUT-36")
+    @Steps
+    public ProductDetailsPageSteps productDetailsPageSteps;
+
+    @Issue("AUT-43")
     @Test
     public void Tag_can_be_added_from_product_details_page() {
         loginSteps.open_Page();
@@ -50,15 +50,14 @@ public class MyTagsStory {
         homePageSteps.click_Shop_By_Supplier_Link();
         shopBySupplierPageSteps.open_Supplier_Page_With_Products();
         shopBySupplierPageSteps.open_Product_Details_Page();
-        myTagsSteps.clickTagBtn();
+        productDetailsPageSteps.click_Add_Tag_Button();
         //myTagsSteps.addTagName();
-        myTagsSteps.addTagField();
-        myTagsSteps.addTagButn();
+        productDetailsPageSteps.enter_Tag_Name();
+        productDetailsPageSteps.click_Add_Tag_Confirm_Button();
         homePageSteps.click_Main_Menu_Btn();
-        myTagsSteps.clickMyAcc();
-        myTagsSteps.clickMyTagsLink();
-        myTagsSteps.check_Tag_Page();
-        homePageSteps.click_Main_Menu_Btn();
-        myTagsSteps.loggOut();
+        homePageSteps.expand_My_Account_Tab();
+        homePageSteps.open_My_Tags_Page();
+        myTagsSteps.check_Tag_On_My_Tags_Page();
+        myTagsSteps.click_appropriate_Tag();
     }
 }

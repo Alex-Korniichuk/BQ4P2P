@@ -22,6 +22,9 @@ public class ShopBySupplierPage extends PageObject {
     @FindBy (xpath = "//div[@id='product-listing-container']/div[1]/div/div[@class='product-name name-container']/a")
     WebElementFacade productName;
 
+    @FindBy (xpath = "//div[@id='product-listing-container']/div[1]/div/div[@class='product-price']/span/span")
+    WebElementFacade productPrice;
+
     public ShopBySupplierPage(){
     }
 
@@ -41,7 +44,11 @@ public class ShopBySupplierPage extends PageObject {
 
     public void addProductsToComparison(){
         for (int i=1; i<=2; i++){
+<<<<<<< HEAD
             waitForRenderedElementsToBePresent(By.xpath("//*[@id='product-listing-container']/div["+i+"]/div/div[2]/div[1]/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
+=======
+            waitForRenderedElementsToBePresent(By.xpath("//*[@id='product-listing-container']/div[" + i + "]/div/div[2]/div[1]/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
+>>>>>>> master
             WebElement compareLink = getDriver().findElement(By.xpath("//*[@id='product-listing-container']/div["+i+"]/div/div[2]/div[1]/div/a"));
             compareLink.click();
         }
@@ -57,7 +64,20 @@ public class ShopBySupplierPage extends PageObject {
         productName.click();
     }
 
+<<<<<<< HEAD
 
     }
 
 
+=======
+    public String getCurrency (){
+        String price = productPrice.getText();
+        String currency = price.substring(0,1);
+        System.out.print("Currency is: "+currency);
+        return currency;
+    }
+
+
+
+}
+>>>>>>> master

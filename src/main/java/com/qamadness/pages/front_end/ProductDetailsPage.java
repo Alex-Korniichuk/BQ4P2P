@@ -22,6 +22,26 @@ public class ProductDetailsPage extends PageObject {
     @FindBy (xpath = "//div[@id='sb-site']/div[4]/div[1]/div/h1")
     WebElementFacade productName;
 
+    @FindBy (xpath = "//div[@class='rating-container']/a[@data-toggle='modal']")
+    WebElementFacade writeReviewLink;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[1]/div[2]/div[1]/div/span/fieldset/label[1]/em")
+    WebElementFacade priceStars;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[1]/div[2]/div[2]/div/span/fieldset/label[2]/em")
+    WebElementFacade valueStars;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[1]/div[2]/div[3]/div/span/fieldset/label[3]/em")
+    WebElementFacade qualityStars;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[1]/div[3]/input[@id='summary_field']")
+    WebElementFacade reviewSummaryField;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[1]/div[4]/textarea[@id='review_field']")
+    WebElementFacade reviewTextArea;
+
+    @FindBy (xpath = "/html/body/div[5]/div/div/form[@id='review-form']/div[2]/button[2]")
+    WebElementFacade submitReviewBtn;
 
     public ProductDetailsPage () {}
 
@@ -37,6 +57,32 @@ public class ProductDetailsPage extends PageObject {
         return productName.getText();
     }
 
+    public void clickWriteReviewLink (){
+        writeReviewLink.click();
+    }
 
+    public void selectPriceRating (){
+        priceStars.click();
+    }
+
+    public void selectValueRating (){
+        valueStars.click();
+    }
+
+    public void selectQualityRating (){
+        qualityStars.click();
+    }
+
+    public void enterReviewSummary (String reviewSummary){
+        reviewSummaryField.type(reviewSummary);
+    }
+
+    public void enterReview (String review){
+        reviewTextArea.type(review);
+    }
+
+    public void clickSubmitReviewBtn (){
+        submitReviewBtn.click();
+    }
 
 }

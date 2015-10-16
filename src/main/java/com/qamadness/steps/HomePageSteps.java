@@ -73,4 +73,7 @@ public class HomePageSteps extends ScenarioSteps {
 
     @Step
     public void open_My_Tags_Page (){homePage.clickMyTagsLink();}
+
+    @Step
+    public void open_My_Location_Page () {homePage.clickMyLocationLink();}
 }

@@ -53,7 +53,7 @@ public class ProductDetailsPage extends PageObject {
     @FindBy(xpath = ".//*[@id='productTagName']")
     WebElementFacade tagNameField;
 
-    @FindBy(css = "#bq-ui-2")
+    @FindBy(css = "#bq-ui-3")
     WebElementFacade addTagConfirmBtn;
 
     public ProductDetailsPage () {}

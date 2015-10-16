@@ -52,8 +52,7 @@ public class MyOrderTemplatesPage extends PageObject {
     }
 
     public void deleteOrderTemplate (){
-        setImplicitTimeout(60, TimeUnit.SECONDS);
-        waitForRenderedElementsToBePresent(By.xpath("//a[@class='btn btn-default']"));
+        waitForRenderedElementsToBePresent(By.xpath("//a[@class='btn btn-default']")).setImplicitTimeout(60, TimeUnit.SECONDS);
         getDriver().findElement(By.xpath("//a[@class='btn btn-default']")).click(); //Click Delete button
         waitForRenderedElementsToBePresent(By.xpath("/html/body/div[5]/div/div/div[3]/button[2]"));
         getDriver().findElement(By.xpath("/html/body/div[5]/div/div/div[3]/button[2]")).click(); //Click 'Yes' button on the dialog window

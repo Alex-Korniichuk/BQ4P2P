@@ -78,6 +78,23 @@ public class CheckoutPage extends PageObject {
     @FindBy (css = ".chain-node.chain-node-first")
     WebElementFacade firstApprover;
 
+    @FindBy (xpath = "//div[@id='approvers-buttons-container']/div/button[2]")
+    WebElementFacade continueToReviewRtn;
+
+
+/* =============================================== Objects for Review tab =========================================== */
+
+    @FindBy (xpath = "//div[@id='review-buttons-container']/div/div/button[2]")
+    WebElementFacade submitOrderBtn;
+
+
+/* ============================================== Objects for Success Page ========================================== */
+
+    @FindBy (id = "name")
+    WebElementFacade orderTemplateNameField;
+
+    @FindBy (id = "btn-request-submit")
+    WebElementFacade saveOrderTemplateBtn;
 
 
     public CheckoutPage (){}
@@ -122,7 +139,7 @@ public class CheckoutPage extends PageObject {
 /* ======================================= Methods for Shipping & Accounting tab ==================================== */
 
     public void waitForShippingStep (){
-        WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='checkout-step-shipping']")));
     }
 
@@ -139,7 +156,7 @@ public class CheckoutPage extends PageObject {
 /* =========================================== Methods for Approval Chain tab ======================================= */
 
     public void waitForApprovalStep (){
-        WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='checkout-step-approvers']")));
     }
 
@@ -149,7 +166,7 @@ public class CheckoutPage extends PageObject {
 
     public void searchForPerson (){
         waitFor(searchField);
-        searchField.type("Robot");
+        searchField.type("Tester");
     }
 
     public void selectPerson (){
@@ -187,6 +204,35 @@ public class CheckoutPage extends PageObject {
 
     }
 
+    public void clickContinueToReviewBtn (){
+        continueToReviewRtn.click();
+    }
+
+/* =============================================== Methods for Review tab =========================================== */
+
+    public void waitForReviewStep (){
+        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='checkout-step-review']")));
+    }
+
+    public void clickSubmitBtn (){
+        submitOrderBtn.click();
+    }
+
+/* ============================================== Methods for Success Page ========================================== */
+
+    public void waitForSuccessPage (){
+        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='main-content']/div[1]/div/h1")));
+    }
+
+    public void enterNewOrderTemplateName (){
+        orderTemplateNameField.type("Test Order Template");
+    }
+
+    public void clickSaveOrderTemplateBtn (){
+        saveOrderTemplateBtn.click();
+    }
 
 
 }

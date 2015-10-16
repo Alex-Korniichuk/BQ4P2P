@@ -94,4 +94,34 @@ public class CheckoutPageSteps extends ScenarioSteps {
         checkoutPage.checkThatApproverIsAdded();
     }
 
+    @Step
+    public void continue_To_Review (){
+        checkoutPage.clickContinueToReviewBtn();
+    }
+
+/* ================================================ Steps for Review tab ============================================ */
+
+    @Step
+    public void wait_Till_Review_Step_Is_Uploaded (){
+        checkoutPage.waitForReviewStep();
+    }
+
+    @Step
+    public void submit_Order (){
+        checkoutPage.clickSubmitBtn();
+    }
+
+/* =============================================== Steps for Success Page =========================================== */
+
+    @Step
+    public void wait_Till_Success_Page_Is_Uploaded (){
+        checkoutPage.waitForSuccessPage();
+    }
+
+    @Step
+    public void create_New_Order_Template (){
+        checkoutPage.enterNewOrderTemplateName();
+        checkoutPage.clickSaveOrderTemplateBtn();
+    }
+
 }

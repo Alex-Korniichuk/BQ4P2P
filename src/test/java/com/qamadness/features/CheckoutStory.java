@@ -50,7 +50,7 @@ public class CheckoutStory {
     }
 
     @Issue("AUT-51")
-    @Pending @Test
+    @Test
     public void add_attachment_on_general_information_page(){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();

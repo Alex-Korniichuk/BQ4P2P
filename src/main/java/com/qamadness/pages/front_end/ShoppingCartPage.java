@@ -25,19 +25,19 @@ public class ShoppingCartPage extends PageObject {
     @FindBy (xpath = "//div[@class='item row']/div[2]/span/a")
     WebElementFacade actualProductName;
 
+    @FindBy (xpath = "//div[@id='main-content']/div/div[1]/div/div/button")
+    WebElementFacade proceedToCheckoutBtn;
+
 
 
     public ShoppingCartPage(){
     }
 
-    public Boolean checkIsProductInTheCart (){
+    public void checkIsProductInTheCart (){
         if (productsTable.isPresent() == true){
             System.out.println("Product is in the cart");
-            return true;
         }else{
-            assert (false);
-            System.out.println("Cart is empty");
-            return false;
+            Assert.fail("Cart is empty");
         }
     }
 
@@ -63,5 +63,8 @@ public class ShoppingCartPage extends PageObject {
         }
     }
 
+    public void clickProceedToCheckoutBtn (){
+        proceedToCheckoutBtn.click();
+    }
 
 }

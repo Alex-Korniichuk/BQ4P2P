@@ -5,6 +5,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 
 /**
@@ -51,6 +52,7 @@ public class CollaborativeCartsPage extends PageObject {
     }
 
     public void clickConfirmBtn (){
+        waitForRenderedElementsToBePresent(By.xpath("html/body/div[@id='confirm_dialog_1']/div/div/div[3]/button[2]"));
         leaveGroupConfirmationBtn.click();
     }
 }

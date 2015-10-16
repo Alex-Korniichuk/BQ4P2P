@@ -44,7 +44,7 @@ public class OrderTemplatesStory {
 
     @Issue("AUT-39")
 
-    @Pending @Test
+    @Pending@Test
     public void create_new_template_and_remove_it(){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
@@ -56,7 +56,7 @@ public class OrderTemplatesStory {
         orderTemplatePageSteps.delete_Order_Template();
     }
 
-    @Pending @Test
+    @Pending@Test
     public void add_a_product_to_order_template(){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_Product_And_Services_Tab();

@@ -35,7 +35,7 @@ public class CollaborativeCartsStory {
 
     @Issue("AUT-49")
 
-    @Pending @Test
+    @Pending@Test
     public void create_new_collaborative_group (){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

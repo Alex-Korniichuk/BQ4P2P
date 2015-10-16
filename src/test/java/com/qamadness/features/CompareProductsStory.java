@@ -39,7 +39,7 @@ public class CompareProductsStory {
 
 
     @Issue("#AUT-36")
-    @Pending @Test
+    @Pending@Test
     public void product_can_be_added_to_cart_from_Compare_Products_page() {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

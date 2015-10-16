@@ -107,7 +107,9 @@ public class ProductDetailsPage extends PageObject {
         nameField.sendKeys("autotest");
     }
 
-    public void clickAddTagConfirmBtn() {addTagConfirmBtn.click();}
+    public void clickAddTagConfirmBtn() {
+        waitForRenderedElementsToBePresent(By.cssSelector("#bq-ui-2"));
+        addTagConfirmBtn.click();}
 
     //public void enterTagName() {tagNameField.sendKeys("autotest");}
 

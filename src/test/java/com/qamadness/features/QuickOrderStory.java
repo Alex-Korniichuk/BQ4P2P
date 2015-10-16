@@ -37,12 +37,11 @@ public class QuickOrderStory {
     @Steps
     public QuickOrderPageSteps quickOrderPageSteps;
 
-    //Test
     @Steps
     public ShoppingCartPageSteps shoppingCartPageSteps;
 
     @Issue("#AUT-38")
-    @Test
+    @Pending@Test
     public void add_products_to_cart_by_uploading_CSV_file (){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

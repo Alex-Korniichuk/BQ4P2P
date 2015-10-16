@@ -34,4 +34,7 @@ public class ShopBySupplierPageSteps extends ScenarioSteps {
     public String get_Product_Currency (){
         return shopBySupplierPage.getCurrency();
     }
+
+    @Step
+    public void add_Product_To_Cart (){ shopBySupplierPage.addProductToCart();}
 }

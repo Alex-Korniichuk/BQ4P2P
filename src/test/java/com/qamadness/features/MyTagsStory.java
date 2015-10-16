@@ -4,6 +4,7 @@ import com.qamadness.steps.*;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
@@ -40,7 +41,7 @@ public class MyTagsStory {
     public ProductDetailsPageSteps productDetailsPageSteps;
 
     @Issue("AUT-43")
-    @Test
+    @Pending @Test
     public void Tag_can_be_added_from_product_details_page() {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

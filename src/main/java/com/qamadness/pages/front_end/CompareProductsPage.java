@@ -12,11 +12,16 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CompareProductsPage extends PageObject {
 
     @FindBy(xpath = "//button[@id='bq-ui-1']")
     WebElementFacade addToCartBtn;
+
+    @FindBy(xpath = "//div[@class='compare-product-buttons']/a")
+    public List<WebElementFacade> allProducts;
 
     public CompareProductsPage() {
     }
@@ -26,11 +31,13 @@ public class CompareProductsPage extends PageObject {
     }
 
     public void removeCompareProducts (){
-        int productsQty = getDriver().findElements(By.xpath("//div[@class='compare-product-buttons']/a")).size();
+        setImplicitTimeout(60, TimeUnit.SECONDS);
+        int productsQty = allProducts.size();
         for (int i=1; i<=productsQty; i++){
             waitForRenderedElementsToBePresent(By.xpath("//th[@class='product'][1]/div/div[1]/div/a"));
             getDriver().findElement(By.xpath("//th[@class='product'][1]/div/div[1]/div/a")).click();
         }
+        resetImplicitTimeout();
     }
 
 }

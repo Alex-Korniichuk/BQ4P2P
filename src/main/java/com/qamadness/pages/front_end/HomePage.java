@@ -69,7 +69,6 @@ public class HomePage extends PageObject {
     }
 
     public void clickShopBySupplierLink (){
-        waitForRenderedElements(By.xpath("//ul[@id='nav-collapse-top-0']/li[7]/a"));
         shopBySupplierLink.click();
     }
 
@@ -93,7 +92,7 @@ public class HomePage extends PageObject {
 
     public void openShoppingCart (){
         miniShoppingCartLink.click();
-        WebDriverWait wait = new WebDriverWait(getDriver(),40);
+        WebDriverWait wait = new WebDriverWait(getDriver(),60);
         WebElement openShoppingCartBtn = wait.until(ExpectedConditions.elementToBeClickable(net.serenitybdd.core.annotations.findby.By.xpath("//a[@class='btn btn-primary btn-sm']")));
         openShoppingCartBtn.click();
     }

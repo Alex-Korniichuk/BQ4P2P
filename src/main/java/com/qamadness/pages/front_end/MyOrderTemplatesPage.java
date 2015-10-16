@@ -5,6 +5,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.By;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by alexandrakorniichuk on 07.10.15.
  */
@@ -43,12 +45,14 @@ public class MyOrderTemplatesPage extends PageObject {
     }
 
     public void openOrderTemplatePage (){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         expandOrderTemplateBtn.click();
         waitForRenderedElementsToBePresent(By.xpath("//ul[@class='dropdown-menu template-menu']/li[3]/a"));
         orderTemplateItem.click();
     }
 
     public void deleteOrderTemplate (){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         waitForRenderedElementsToBePresent(By.xpath("//a[@class='btn btn-default']"));
         getDriver().findElement(By.xpath("//a[@class='btn btn-default']")).click(); //Click Delete button
         waitForRenderedElementsToBePresent(By.xpath("/html/body/div[5]/div/div/div[3]/button[2]"));

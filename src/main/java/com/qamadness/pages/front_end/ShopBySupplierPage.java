@@ -29,6 +29,7 @@ public class ShopBySupplierPage extends PageObject {
     }
 
     public void openSupplierPageWithProducts (){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         int suppliersQty = getDriver().findElements(By.xpath("//ul[@id='supplierList']/li")).size();
         for (int i=1; i<=suppliersQty; i++){
             waitForRenderedElementsToBePresent(By.xpath("//ul[@id='supplierList']/li[" + i + "]/div/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
@@ -43,6 +44,7 @@ public class ShopBySupplierPage extends PageObject {
     }
 
     public void addProductsToComparison(){
+        setImplicitTimeout(50, TimeUnit.SECONDS);
         for (int i=1; i<=2; i++){
 
             waitForRenderedElementsToBePresent(By.xpath("//*[@id='product-listing-container']/div["+i+"]/div/div[2]/div[1]/div/a")).withTimeoutOf(60, TimeUnit.SECONDS);
@@ -55,6 +57,7 @@ public class ShopBySupplierPage extends PageObject {
     }
 
     public void goToComparisonPage (){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         waitForRenderedElementsToBePresent(By.cssSelector(".compare-link-action")).withTimeoutOf(60, TimeUnit.SECONDS);
         WebElement linkToComparePage = getDriver().findElement(By.cssSelector(".compare-link-action"));
         linkToComparePage.click();

@@ -9,6 +9,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by alexandrakorniichuk on 02.10.15.
  */
@@ -40,6 +42,7 @@ public class ShoppingCartPage extends PageObject {
     }
 
     public void clearCart(){
+        setImplicitTimeout(60, TimeUnit.SECONDS);
         clearCartBtn.click();
         waitForRenderedElementsToBePresent(By.xpath("html/body/div[@id='emptyCart']/div/div"));
         WebElement containerFrame = getDriver().findElement(By.xpath("html/body/div[@id='emptyCart']/div/div"));
@@ -48,6 +51,7 @@ public class ShoppingCartPage extends PageObject {
         WebElement confirmBtn = getDriver().findElement(By.xpath("html/body/div[@id='emptyCart']/div/div/form/div[3]/button[@type='submit']"));
         confirmBtn.click();
         waitForRenderedElementsToBePresent(By.className("empty-cart-content"));
+        resetImplicitTimeout();
 
     }
 

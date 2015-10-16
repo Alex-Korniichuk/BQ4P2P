@@ -75,8 +75,4 @@ public class OrderTemplatesStory {
         shoppingCartPageSteps.go_To_Previous_Page();
         orderTemplatePageSteps.remove_Product_From_Order_Template();
     }
-
-
-
-
 }

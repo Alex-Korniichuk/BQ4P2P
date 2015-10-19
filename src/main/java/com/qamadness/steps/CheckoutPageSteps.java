@@ -124,4 +124,9 @@ public class CheckoutPageSteps extends ScenarioSteps {
         checkoutPage.clickSaveOrderTemplateBtn();
     }
 
+    @Step
+    public String get_Request_ID (){
+        return checkoutPage.getRequestID();
+    }
+
 }

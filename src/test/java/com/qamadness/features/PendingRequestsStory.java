@@ -6,6 +6,7 @@ import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Managed;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,11 +15,12 @@ import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 
 /**
- * Created by alexandrakorniichuk on 15.10.15.
+ * Created by alexandrakorniichuk on 19.10.15.
  */
+
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value="src/test/resources/TestingData.csv")
-public class CheckoutStory {
+public class PendingRequestsStory {
 
     private String email;
     private String password;
@@ -41,6 +43,15 @@ public class CheckoutStory {
     @Steps
     public CheckoutPageSteps checkoutPageSteps;
 
+    @Steps
+    public PendingRequestsPageSteps pendingRequestsPageSteps;
+
+    @Steps
+    public PendingRequestDetailsPageSteps pendingRequestDetailsPageSteps;
+
+    @Steps
+    public ArchivedRequestsPageSteps archivedRequestsPageSteps;
+
     @Before
     public void loginToSite(){
         loginSteps.open_Page();
@@ -49,28 +60,9 @@ public class CheckoutStory {
         homePageSteps.check_Is_User_Logged_In();
     }
 
-    @Issue("AUT-51")
-    @Pending @Test
-    public void add_attachment_on_general_information_page(){
-        homePageSteps.click_Main_Menu_Btn();
-        homePageSteps.click_Shop_By_Supplier_Link();
-        shopBySupplierPageSteps.open_Supplier_Page_With_Products();
-        shopBySupplierPageSteps.add_Product_To_Cart();
-        homePageSteps.open_Shopping_Cart();
-        shoppingCartPageSteps.check_Is_Product_In_The_Cart();
-        shoppingCartPageSteps.click_Proceed_To_Checkout_Button();
-        checkoutPageSteps.upload_File();
-        checkoutPageSteps.check_That_File_Is_Uploaded();
-        checkoutPageSteps.remove_File();
-        shoppingCartPageSteps.go_To_Previous_Page();
-        shoppingCartPageSteps.clear_Cart();
-        homePageSteps.click_Main_Menu_Btn();
-        homePageSteps.logout();
-    }
-
-    @Issue("AUT-52")
-    @Pending @Test
-    public void add_approver_and_watcher_to_chain (){
+    @Issue("AUT-54")
+    @Test
+    public void check_that_request_is_added_to_pending_requests_after_purchase (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();
         shopBySupplierPageSteps.open_Supplier_Page_With_Products();
@@ -85,12 +77,55 @@ public class CheckoutStory {
         checkoutPageSteps.select_Shipping_Address();
         checkoutPageSteps.continue_To_Approval_Chain();
         checkoutPageSteps.wait_Till_Approval_Chain_Step_Is_Uploaded();
-        checkoutPageSteps.add_Watcher();
-        checkoutPageSteps.check_That_Watcher_Is_Added();
-        checkoutPageSteps.addApprover();
-        checkoutPageSteps.check_That_Approver_Is_Added_To_Chain();
-        shoppingCartPageSteps.go_To_Previous_Page();
-        shoppingCartPageSteps.clear_Cart();
+        checkoutPageSteps.continue_To_Review();
+        checkoutPageSteps.wait_Till_Review_Step_Is_Uploaded();
+        checkoutPageSteps.submit_Order();
+        checkoutPageSteps.wait_Till_Success_Page_Is_Uploaded();
+        String expectedRequestID = checkoutPageSteps.get_Request_ID();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.expand_My_Documents_Tab();
+        homePageSteps.expand_Requests_Tab();
+        homePageSteps.open_Pending_Requests_Page();
+        pendingRequestsPageSteps.search_Request_By_ID(expectedRequestID);
+        pendingRequestsPageSteps.check_Search_Results(expectedRequestID);
+    }
+
+    @Test
+    public void withdraw_Pending_Request (){
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.click_Shop_By_Supplier_Link();
+        shopBySupplierPageSteps.open_Supplier_Page_With_Products();
+        shopBySupplierPageSteps.add_Product_To_Cart();
+        homePageSteps.open_Shopping_Cart();
+        shoppingCartPageSteps.check_Is_Product_In_The_Cart();
+        shoppingCartPageSteps.click_Proceed_To_Checkout_Button();
+        checkoutPageSteps.enter_Order_Title("Test Order Title");
+        checkoutPageSteps.enter_Reason_To_Buy("Test Reason To Buy");
+        checkoutPageSteps.continue_To_Shipping_And_Accounting();
+        checkoutPageSteps.wait_Till_Shipping_Step_Is_Uploaded();
+        checkoutPageSteps.select_Shipping_Address();
+        checkoutPageSteps.continue_To_Approval_Chain();
+        checkoutPageSteps.wait_Till_Approval_Chain_Step_Is_Uploaded();
+        checkoutPageSteps.continue_To_Review();
+        checkoutPageSteps.wait_Till_Review_Step_Is_Uploaded();
+        checkoutPageSteps.submit_Order();
+        checkoutPageSteps.wait_Till_Success_Page_Is_Uploaded();
+        String expectedRequestID = checkoutPageSteps.get_Request_ID();
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.expand_My_Documents_Tab();
+        homePageSteps.expand_Requests_Tab();
+        homePageSteps.open_Pending_Requests_Page();
+        pendingRequestsPageSteps.search_Request_By_ID(expectedRequestID);
+        pendingRequestsPageSteps.check_Search_Results(expectedRequestID);
+        pendingRequestsPageSteps.open_Request_Details_Page();
+        pendingRequestDetailsPageSteps.withdraw_Pending_Request();
+        archivedRequestsPageSteps.search_Request_By_ID(expectedRequestID);
+        archivedRequestsPageSteps.check_Search_Results(expectedRequestID);
+
+    }
+
+    @After
+    public void logout () {
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.logout();
     }

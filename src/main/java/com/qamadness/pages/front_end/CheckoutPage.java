@@ -96,6 +96,9 @@ public class CheckoutPage extends PageObject {
     @FindBy (id = "btn-request-submit")
     WebElementFacade saveOrderTemplateBtn;
 
+    @FindBy (xpath = "//div[@id='main-content']/div[2]/div[1]/p[2]/a")
+    WebElementFacade requestLink;
+
 
     public CheckoutPage (){}
 
@@ -232,6 +235,11 @@ public class CheckoutPage extends PageObject {
 
     public void clickSaveOrderTemplateBtn (){
         saveOrderTemplateBtn.click();
+    }
+
+    public String getRequestID (){
+        String requestID = requestLink.getText();
+        return requestID;
     }
 
 

@@ -6,9 +6,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 /**
  * Created by alexandrakorniichuk on 13.10.15.
@@ -54,6 +52,7 @@ public class CollaborativeCartsPage extends PageObject {
     }
 
     public void clickConfirmBtn (){
+        waitForRenderedElementsToBePresent(By.xpath("html/body/div[@id='confirm_dialog_1']/div/div/div[3]/button[2]"));
         leaveGroupConfirmationBtn.click();
     }
 }

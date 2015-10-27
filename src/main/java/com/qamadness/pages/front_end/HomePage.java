@@ -49,8 +49,17 @@ public class HomePage extends PageObject {
     @FindBy (xpath = "//ul[@id='nav-my-account']/li[8]/a")
     WebElementFacade myReviewsLink;
 
-    @FindBy(xpath = ".//*[@id='nav-my-account']/li[9]/a")
+    @FindBy(xpath = "//*[@id='nav-my-account']/li[9]/a")
     WebElementFacade myTagsLink;
+
+    @FindBy (xpath = "//ul[@id='nav-level-one']/li[3]/a")
+    WebElementFacade myDocumentsTab;
+
+    @FindBy (xpath = "//*[@id='nav-collapse-top-1']/li[1]/a")
+    WebElementFacade requestsTab;
+
+    @FindBy (xpath = "//*[@id='nav-collapse-sl-6']/li[1]/a")
+    WebElementFacade pendingRequestsLink;
 
     public HomePage() {}
 
@@ -69,7 +78,6 @@ public class HomePage extends PageObject {
     }
 
     public void clickShopBySupplierLink (){
-        waitForRenderedElements(By.xpath("//ul[@id='nav-collapse-top-0']/li[7]/a"));
         shopBySupplierLink.click();
     }
 
@@ -93,7 +101,7 @@ public class HomePage extends PageObject {
 
     public void openShoppingCart (){
         miniShoppingCartLink.click();
-        WebDriverWait wait = new WebDriverWait(getDriver(),40);
+        WebDriverWait wait = new WebDriverWait(getDriver(),60);
         WebElement openShoppingCartBtn = wait.until(ExpectedConditions.elementToBeClickable(net.serenitybdd.core.annotations.findby.By.xpath("//a[@class='btn btn-primary btn-sm']")));
         openShoppingCartBtn.click();
     }
@@ -123,5 +131,27 @@ public class HomePage extends PageObject {
     }
 
     public void clickMyTagsLink() {myTagsLink.click();}
+
+    public void expandMyDocumentsTab (){
+        String tabState = myDocumentsTab.getAttribute("class");
+        System.out.println(tabState);
+        if (tabState.equalsIgnoreCase("collapsed") == true){
+            myDocumentsTab.click();
+        }
+    }
+
+    public void expandRequestsTab (){
+        String tabState = requestsTab.getAttribute("class");
+        System.out.println(tabState);
+        if (tabState.equalsIgnoreCase("collapsed") == true){
+            requestsTab.click();
+        }
+    }
+
+    public void clickPendingRequestsLink (){
+        pendingRequestsLink.click();
+    }
+
+
 
 }

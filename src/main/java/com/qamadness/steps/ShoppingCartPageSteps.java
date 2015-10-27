@@ -13,10 +13,7 @@ public class ShoppingCartPageSteps extends ScenarioSteps {
 
     @Step
     public void check_Is_Product_In_The_Cart(){
-        Boolean status = shoppingCartPage.checkIsProductInTheCart();
-        if (status == true){
-            shoppingCartPage.clearCart();
-        }
+        shoppingCartPage.checkIsProductInTheCart();
     }
 
     @Step
@@ -32,6 +29,11 @@ public class ShoppingCartPageSteps extends ScenarioSteps {
     @Step
     public void go_To_Previous_Page (){
         getDriver().navigate().back();
+    }
+
+    @Step
+    public void click_Proceed_To_Checkout_Button(){
+        shoppingCartPage.clickProceedToCheckoutBtn();
     }
 
 }

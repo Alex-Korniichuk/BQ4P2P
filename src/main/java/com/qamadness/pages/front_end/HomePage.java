@@ -49,11 +49,17 @@ public class HomePage extends PageObject {
     @FindBy (xpath = "//ul[@id='nav-my-account']/li[8]/a")
     WebElementFacade myReviewsLink;
 
-    @FindBy(xpath = ".//*[@id='nav-my-account']/li[9]/a")
+    @FindBy(xpath = "//*[@id='nav-my-account']/li[9]/a")
     WebElementFacade myTagsLink;
 
-    @FindBy (xpath = ".//*[@id='nav-my-account']/li[4]/a")
-    WebElementFacade myLocationLink;
+    @FindBy (xpath = "//ul[@id='nav-level-one']/li[3]/a")
+    WebElementFacade myDocumentsTab;
+
+    @FindBy (xpath = "//*[@id='nav-collapse-top-1']/li[1]/a")
+    WebElementFacade requestsTab;
+
+    @FindBy (xpath = "//*[@id='nav-collapse-sl-6']/li[1]/a")
+    WebElementFacade pendingRequestsLink;
 
     public HomePage() {}
 
@@ -125,9 +131,5 @@ public class HomePage extends PageObject {
     }
 
     public void clickMyTagsLink() {myTagsLink.click();}
-
-    public void clickMyLocationLink() {myLocationLink.click();}
-
-
 
 }

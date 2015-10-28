@@ -1,4 +1,4 @@
-package com.qamadness.steps;
+package com.qamadness.steps.front_end_steps;
 
 import com.qamadness.pages.front_end.ShopBySupplierPage;
 import net.thucydides.core.annotations.Step;
@@ -34,4 +34,7 @@ public class ShopBySupplierPageSteps extends ScenarioSteps {
     public String get_Product_Currency (){
         return shopBySupplierPage.getCurrency();
     }
+
+    @Step
+    public void add_Product_To_Cart (){ shopBySupplierPage.addProductToCart();}
 }

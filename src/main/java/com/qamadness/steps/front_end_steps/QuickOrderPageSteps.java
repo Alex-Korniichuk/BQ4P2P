@@ -1,4 +1,4 @@
-package com.qamadness.steps;
+package com.qamadness.steps.front_end_steps;
 
 /**
  * Created by alexandrakorniichuk on 02.10.15.

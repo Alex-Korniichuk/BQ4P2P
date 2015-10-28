@@ -1,4 +1,4 @@
-package com.qamadness.steps;
+package com.qamadness.steps.front_end_steps;
 
 import com.qamadness.pages.front_end.HomePage;
 import net.thucydides.core.annotations.Step;
@@ -73,7 +73,4 @@ public class HomePageSteps extends ScenarioSteps {
 
     @Step
     public void open_My_Tags_Page (){homePage.clickMyTagsLink();}
-
-    @Step
-    public void open_My_Location_Page () {homePage.clickMyLocationLink();}
 }

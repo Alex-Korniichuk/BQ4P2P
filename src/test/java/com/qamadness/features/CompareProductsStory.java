@@ -1,6 +1,6 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.*;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
@@ -39,7 +39,7 @@ public class CompareProductsStory {
 
 
     @Issue("#AUT-36")
-    @Pending @Test
+    @Test
     public void product_can_be_added_to_cart_from_Compare_Products_page() {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

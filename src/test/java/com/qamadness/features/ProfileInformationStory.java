@@ -1,12 +1,17 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.HomePageSteps;
+import com.qamadness.steps.front_end_steps.LoginSteps;
+import com.qamadness.steps.front_end_steps.ProfileInformationPageSteps;
+import com.qamadness.steps.front_end_steps.ShopBySupplierPageSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.UseTestDataFrom;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -41,14 +46,18 @@ public class ProfileInformationStory {
     @Steps
     public ShopBySupplierPageSteps shopBySupplierPageSteps;
 
-    @Issue("AUT-44")
-
-    @Pending @Test
-    public void change_password (){
+    @Before
+    public void login_to_the_site (){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);
         loginSteps.click_Login_Btn();
         homePageSteps.check_Is_User_Logged_In();
+    }
+
+    @Issue("AUT-44")
+
+    @Test
+    public void change_password (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
         homePageSteps.open_Profile_Information_Page();
@@ -73,7 +82,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-45")
 
-    @Pending @Test
+    @Test
     public void change_first_and_last_name (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
@@ -91,7 +100,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-50")
 
-    @Pending @Test
+    @Test
     public void change_site_language (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
@@ -103,8 +112,11 @@ public class ProfileInformationStory {
         profileInformationPageSteps.save_Preferences();
     }
 
-    @Pending @Test
+    @Test
     public void change_currency_and_check_it_on_Supplier_Page (){
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.expand_My_Account_Tab();
+        homePageSteps.open_Profile_Information_Page();
         profileInformationPageSteps.select_Currency("EUR");
         profileInformationPageSteps.save_Preferences();
         homePageSteps.click_Main_Menu_Btn();
@@ -120,4 +132,10 @@ public class ProfileInformationStory {
         profileInformationPageSteps.save_Preferences();
     }
 
+    @After
+    public void logout ()
+    {
+        homePageSteps.click_Main_Menu_Btn();
+        homePageSteps.logout();
+    }
 }

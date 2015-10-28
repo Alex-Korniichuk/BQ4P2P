@@ -1,6 +1,8 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.CollaborativeCartsPageSteps;
+import com.qamadness.steps.front_end_steps.HomePageSteps;
+import com.qamadness.steps.front_end_steps.LoginSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
@@ -35,7 +37,7 @@ public class CollaborativeCartsStory {
 
     @Issue("AUT-49")
 
-    @Pending @Test
+    @Test
     public void create_new_collaborative_group (){
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

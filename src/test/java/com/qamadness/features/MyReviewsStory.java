@@ -3,7 +3,7 @@ package com.qamadness.features;
 /**
  * Created by alexandrakorniichuk on 13.10.15.
  */
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.*;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
@@ -42,7 +42,7 @@ public class MyReviewsStory {
 
     @Issue("AUT-42")
 
-    @Pending @Test
+    @Test
     public void add_new_review_for_a_product (){
         String reviewSummary = "Robot Test Review";
         String review = "This is my Robot test review for the products. Please remove it after test.";

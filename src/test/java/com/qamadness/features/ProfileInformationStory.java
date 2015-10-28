@@ -1,6 +1,9 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.HomePageSteps;
+import com.qamadness.steps.front_end_steps.LoginSteps;
+import com.qamadness.steps.front_end_steps.ProfileInformationPageSteps;
+import com.qamadness.steps.front_end_steps.ShopBySupplierPageSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;

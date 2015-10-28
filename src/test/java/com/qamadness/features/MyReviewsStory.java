@@ -3,7 +3,7 @@ package com.qamadness.features;
 /**
  * Created by alexandrakorniichuk on 13.10.15.
  */
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.*;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;

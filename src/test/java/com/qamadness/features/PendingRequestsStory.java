@@ -1,6 +1,6 @@
 package com.qamadness.features;
 
-import com.qamadness.steps.*;
+import com.qamadness.steps.front_end_steps.*;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
@@ -61,7 +61,7 @@ public class PendingRequestsStory {
     }
 
     @Issue("AUT-54")
-    @Test
+    @Pending@Test
     public void check_that_request_is_added_to_pending_requests_after_purchase (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();
@@ -90,7 +90,7 @@ public class PendingRequestsStory {
         pendingRequestsPageSteps.check_Search_Results(expectedRequestID);
     }
 
-    @Test
+    @Pending@Test
     public void withdraw_Pending_Request (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();

@@ -3,10 +3,10 @@ package com.qamadness.features;
 /**
  * Created by alexandrakorniichuk on 02.10.15.
  */
-import com.qamadness.steps.HomePageSteps;
-import com.qamadness.steps.QuickOrderPageSteps;
-import com.qamadness.steps.LoginSteps;
-import com.qamadness.steps.ShoppingCartPageSteps;
+import com.qamadness.steps.front_end_steps.HomePageSteps;
+import com.qamadness.steps.front_end_steps.QuickOrderPageSteps;
+import com.qamadness.steps.front_end_steps.LoginSteps;
+import com.qamadness.steps.front_end_steps.ShoppingCartPageSteps;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;

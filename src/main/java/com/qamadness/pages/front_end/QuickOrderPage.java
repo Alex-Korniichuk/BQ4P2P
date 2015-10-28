@@ -18,12 +18,7 @@ public class QuickOrderPage extends PageObject {
     @FindBy (xpath = "//div[@id='sku_file-upload-box']")
     WebElementFacade addFileInput;
 
-<<<<<<< HEAD
-
-    @FindBy (xpath = "//div[@class='pull-right']/button']")
-=======
     @FindBy (xpath = "//div[@class='pull-right']/button")
->>>>>>> origin/master
     WebElementFacade uploadButton;
 
     public QuickOrderPage(WebDriver driver) {

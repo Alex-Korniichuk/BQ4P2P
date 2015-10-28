@@ -42,7 +42,7 @@ public class MyReviewsStory {
 
     @Issue("AUT-42")
 
-    @Pending @Test
+    @Test
     public void add_new_review_for_a_product (){
         String reviewSummary = "Robot Test Review";
         String review = "This is my Robot test review for the products. Please remove it after test.";

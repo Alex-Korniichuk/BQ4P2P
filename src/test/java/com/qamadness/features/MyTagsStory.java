@@ -41,7 +41,7 @@ public class MyTagsStory {
     public ProductDetailsPageSteps productDetailsPageSteps;
 
     @Issue("AUT-43")
-    @Pending @Test
+    @Test
     public void Tag_can_be_added_from_product_details_page() {
         loginSteps.open_Page();
         loginSteps.enter_Credentials(email,password);

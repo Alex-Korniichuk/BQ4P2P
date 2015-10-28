@@ -1,10 +1,7 @@
 package com.qamadness.features;
 
-<<<<<<< HEAD
-import com.qamadness.steps.*;
-=======
+
 import com.qamadness.steps.front_end_steps.*;
->>>>>>> pr/2
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;

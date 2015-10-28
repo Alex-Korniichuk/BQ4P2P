@@ -50,7 +50,7 @@ public class CheckoutStory {
     }
 
     @Issue("AUT-51")
-    @Test
+    @Pending @Test
     public void add_attachment_on_general_information_page(){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();
@@ -69,7 +69,7 @@ public class CheckoutStory {
     }
 
     @Issue("AUT-52")
-    @Test
+    @Pending @Test
     public void add_approver_and_watcher_to_chain (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();

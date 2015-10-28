@@ -57,7 +57,7 @@ public class OrderTemplatesStory {
 
     @Issue("AUT-39")
 
-    @Test
+    @Pending@Test
     public void create_new_template_and_remove_it(){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.open_My_Order_Templates_Page();
@@ -65,7 +65,7 @@ public class OrderTemplatesStory {
         orderTemplatePageSteps.delete_Order_Template();
     }
 
-    @Test
+    @Pending@Test
     public void add_a_product_to_order_template(){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_Product_And_Services_Tab();
@@ -86,7 +86,7 @@ public class OrderTemplatesStory {
     }
 
     @Issue("AUT-53")
-    @Test
+    @Pending @Test
     public void create_order_template_from_recent_order (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.click_Shop_By_Supplier_Link();

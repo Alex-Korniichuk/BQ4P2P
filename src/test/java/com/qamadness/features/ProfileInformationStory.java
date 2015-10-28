@@ -53,7 +53,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-44")
 
-    @Test
+    @Pending @Test
     public void change_password (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
@@ -79,7 +79,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-45")
 
-    @Test
+    @Pending @Test
     public void change_first_and_last_name (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
@@ -97,7 +97,7 @@ public class ProfileInformationStory {
 
     @Issue("AUT-50")
 
-    @Test
+    @Pending @Test
     public void change_site_language (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();
@@ -109,7 +109,7 @@ public class ProfileInformationStory {
         profileInformationPageSteps.save_Preferences();
     }
 
-    @Test
+    @Pending @Test
     public void change_currency_and_check_it_on_Supplier_Page (){
         homePageSteps.click_Main_Menu_Btn();
         homePageSteps.expand_My_Account_Tab();

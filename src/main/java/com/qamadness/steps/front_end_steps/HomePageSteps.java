@@ -73,19 +73,4 @@ public class HomePageSteps extends ScenarioSteps {
 
     @Step
     public void open_My_Tags_Page (){homePage.clickMyTagsLink();}
-
-    @Step
-    public void expand_My_Documents_Tab (){
-        homePage.expandMyDocumentsTab();
-    }
-
-    @Step
-    public void expand_Requests_Tab (){
-        homePage.expandRequestsTab();
-    }
-
-    @Step
-    public void open_Pending_Requests_Page (){
-        homePage.clickPendingRequestsLink();
-    }
 }

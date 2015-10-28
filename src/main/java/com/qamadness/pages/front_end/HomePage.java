@@ -132,26 +132,4 @@ public class HomePage extends PageObject {
 
     public void clickMyTagsLink() {myTagsLink.click();}
 
-    public void expandMyDocumentsTab (){
-        String tabState = myDocumentsTab.getAttribute("class");
-        System.out.println(tabState);
-        if (tabState.equalsIgnoreCase("collapsed") == true){
-            myDocumentsTab.click();
-        }
-    }
-
-    public void expandRequestsTab (){
-        String tabState = requestsTab.getAttribute("class");
-        System.out.println(tabState);
-        if (tabState.equalsIgnoreCase("collapsed") == true){
-            requestsTab.click();
-        }
-    }
-
-    public void clickPendingRequestsLink (){
-        pendingRequestsLink.click();
-    }
-
-
-
 }
